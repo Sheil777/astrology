@@ -1,0 +1,116 @@
+@media (max-width: 850px) {}
+
+<div class="burger">
+    <span></span>
+</div>
+
+.burger {
+    display: none;
+    position: fixed;
+    width: $burger-width;
+    height: $burger-height;
+    top: 26px;
+    left: 22px;
+    z-index: 10;
+
+    span, &::before, &::after {
+        display: block;
+        content: "";
+        width: 100%;
+        height: $burger-height-line;
+        background-color: #585858;
+        position: absolute;
+    }
+
+    span {
+        position: absolute;
+        top: $burger-height / 2 - ($burger-height / 6 / 2);
+        transition: all 0.3s;
+    }
+
+    &::before, &::after {
+        transition: all 0.5s;
+    }
+
+    &::before {
+        top: 0;
+    }
+
+    &::after {
+        bottom: 0;
+    }
+}
+
+.burger_close {
+    z-index: 10;
+
+    & span {
+        /* transform: rotate(45deg); */
+        width: 0;
+        background-color: white;
+    }
+
+    &::before {
+        top: 15px;
+        transform: rotate(45deg);
+    }
+
+    &::after {
+        top: 15px;
+        transform: rotate(-45deg);
+    }
+}
+
+@media (max-width: 750px) {
+    .burger{
+        display: block;
+    }
+}
+
+
+В популярном фреймворке разработчиков Bootstrap сейчас представлено шесть брейкпоинтов: 1920, 1200, 992, 768, 576 и 376 пикселей.
+@media (max-width: 1200px) {}
+@media (max-width: 992px) {}
+@media (max-width: 768px) {}
+@media (max-width: 576px) {}
+@media (max-width: 376px) {}
+
+
+
+<meta http-equiv="cache-control" content="no-cache, no-store, must-revalidate" />
+<meta http-equiv="pragma" content="no-cache" />
+<meta http-equiv="expires" content="0" />
+<link rel="stylesheet" href="template/css/style.css?v=123">
+
+
+
+
+/********************************************************************************************************/
+Комманды:
+git config --global credential.helper store
+
+
+
+
+
+/********************************************************************************************************/
+Полезные ссылки:
+https://tinyjpg.com/ - сжатие картинок
+https://blog.lisogorsky.ru/ignor-scroll-iframe-maps - пролистывание карты
+
+
+
+
+/********************************************************************************************************/
+CSS Navigator
+eCSStractor
+Live Sass Compiler
+Live Server
+Project Manager
+
+
+
+
+
+
+
