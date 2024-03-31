@@ -45,13 +45,9 @@
     }
 }
 
-.main {
-    height: 1300px;
-    &__container {
-    }
-}
+// promo
 
-.main-bg {
+.promo-bg {
     position: relative;
 
     &__circle {
@@ -65,5 +61,63 @@
         top: 770px;
 
         z-index: 20;
+    }
+}
+
+.promo {
+    height: 1300px;
+
+    &__container {
+    }
+
+    &__left {
+        position: relative;
+        z-index: 5;
+    }
+
+    &__header {
+        max-width: 600px;
+        padding-top: 320px;
+        font-family: "Cormorant SC";
+        line-height: 110%;
+        font-size: 74px;
+        font-weight: 500; /* Medium */
+    }
+
+    &__text {
+        max-width: 405px;
+        line-height: 150%;
+        color: #D0D0D0;
+        margin-top: 60px;
+
+        span {
+            color: #787878;
+        }
+    }
+
+    &__right {
+    }
+}
+
+// feedback
+
+.feedback {
+
+    &__container {
+    }
+
+    &__slider {
+    }
+
+    &__slide {
+    }
+
+    &__stars {
+    }
+
+    &__text {
+    }
+
+    &__user {
     }
 }

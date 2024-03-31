@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@300;400;500;600;700&family=Inter:wght@100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Teko:wght@300..700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./template/css/swiper-bundle.min.css">
     <link rel="stylesheet" href="./template/css/style.css">
     <title>Астрология</title>
 </head>
@@ -34,13 +35,39 @@
                 </nav>
             </div>
         </header>
+
         <main class="main">
-            <div class="main-bg">
-                <img src="./template/img/promo/circle.png" class="main-bg__circle" alt="">
-                <img src="./template/img/promo/stones.png" class="main-bg__stones" alt="">
-            </div>
-            <div class="main__container _container"></div>
+            <section class="promo">
+                <div class="promo-bg">
+                    <img src="./template/img/promo/circle.png" class="promo-bg__circle" alt="">
+                    <img src="./template/img/promo/stones.png" class="promo-bg__stones" alt="">
+                </div>
+                <div class="promo__container _container">
+                    <div class="promo__left">
+                        <h1 class="promo__header">Рассчитать натальную карту</h1>
+                        <p class="promo__text"><span>Раскройте секреты Вашего</span> звездного кода <span>— узнайте больше о своих</span> уникальных силах и жизненных поворотах</p>
+                    </div>
+                    <div class="promo__right">
+
+                    </div>
+                </div>
+            </section>
+            <section class="feedback">
+                <div class="feedback__container _container">
+                    <h2>Отзывы наших пользователей</h2>
+                    <div class="feedback__slider swiper">
+                        <div class="swiper-wrapper">
+                            <div class="feedback__slide swiper-slide">
+                                <div class="feedback__stars"></div>
+                                <div class="feedback__text">После развода я чувствовала себя потерянной и неуверенной в себе. Открытие моей натальной карты на вашем сайте помогло мне по-новому взглянуть на мои сильные стороны и возможности для перезагрузки жизни. Я начала понимать, почему некоторые отношения были такими сложными, а также какие уроки я должна извлечь. Это был первый шаг к моему личному преобразованию, и я бесконечно благодарна за этот инструмент самопознания!</div>
+                                <div class="feedback__user">Ирина, 34 года</div>
+                            </div>
+                        </div>
+                      </div>
+                </div>
+            </section>
         </main>
+
         <footer class="footer">
             <div class="footer__container _container"></div>
         </footer>
@@ -52,5 +79,7 @@
             </div>
         </div> -->
     </div>
+    <script src="./template/js/swiper-bundle.min.js"></script>
+    <script src="./template/js/scripts.js"></script>
 </body>
 </html>
