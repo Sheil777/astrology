@@ -14,22 +14,22 @@
 </head>
 <body>
     <div class="wrapper">
-        <header class="header">
+        <header class="header" id="header">
             <div class="header__container _container">
-                <a href="" class="header__logo">
+                <a class="header__logo">
                     <!-- <img src="img/LOGO.png" alt="Logo"> -->
                     Лого
                 </a>
                 <nav class="header__menu">
                     <ul class="menu__list">
                         <li class="menu__item">
-                            <a href="" class="menu__link">Главная</a>
+                            <a class="menu__link">Главная</a>
                         </li>
                         <li class="menu__item">
-                            <a href="" class="menu__link">Отзывы</a>
+                            <a href="#feedback" class="menu__link">Отзывы</a>
                         </li>
                         <li class="menu__item">
-                            <a href="" class="menu__link">Вопросы и ответы</a>
+                            <a href="#faq" class="menu__link">Вопросы и ответы</a>
                         </li>
                     </ul>
                 </nav>
@@ -52,7 +52,7 @@
                     </div>
                 </div>
             </section>
-            <section class="feedback">
+            <section class="feedback" id="feedback">
                 <div class="feedback__container _container">
                     <h2>Отзывы наших пользователей</h2>
                     <div class="feedback__slider swiper">
@@ -137,7 +137,7 @@
                       </div>
                 </div>
             </section>
-            <section class="faq">
+            <section class="faq" id="faq">
                 <div class="faq__container _container">
                     <h2>Вопросы и ответы</h2>
                     <section class="question first">
@@ -185,7 +185,43 @@
         </main>
 
         <footer class="footer">
-            <div class="footer__container _container"></div>
+            <div class="footer__container _container">
+                <div class="footer-t">
+                    <div class="footer-t__start">
+                        <div class="footer__logo">
+                            <a href="#header">Название</a>
+                        </div>
+                        <p>In a laoreet purus. Integer turpis quam, laoreet id orci nec, ultrices lacinia nunc. Aliquam erat vo</p>
+                        <a href="#" class="footer-t__pay">Оплата услуг</a>
+                    </div>
+                    <div class="footer-t__column">
+                        <h3>Ссылки</h3>
+                        <ul>
+                            <li><a href="#header">Главная</a></li>
+                            <li><a href="#feedback">Отзывы</a></li>
+                            <li><a href="#faq">Вопросы и ответы</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-t__column">
+                        <h3>Реквизиты</h3>
+                        <ul>
+                            <li>Номер телефона - <a href="tel:89075550101">8 (907) 555-0101</a></li>
+                            <li>ИП</li>
+                            <li>ИНН</li>
+                            <li>Адрес</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-b">
+                    <div class="footer-b__copyright">© 2024 Name. All rights reserved.</div>
+                    <ul>
+                        <li><a href="#">Политика конфиденциальности</a></li>
+                        <li><a href="#">Пользовательское соглашение</a></li>
+                        <li><a href="#">Публичная оферта</a></li>
+                        <li><a href="#">Согласие на обработку данных</a></li>
+                    </ul>
+                </div>
+            </div>
         </footer>
         <!-- <div id="popup" class="popup">
             <div class="popup__body">

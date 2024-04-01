@@ -35,12 +35,17 @@
     &__link {
         color: #D4D4D4;
         font-family: "Golos Text";
-        transition: all 1s;
+        
+        transition: all 0.3s;
 
-        &:hover {
+        &:first-child {
             color: #fff;
             font-family: "JetBrains Mono";
+        }
 
+        &:hover {
+            color: #CF88E2;
+            cursor: pointer;
         }
     }
 }
@@ -207,6 +212,9 @@
 
         &.third {
             background-color: #0E0E27;
+            p {
+                font-family: "JetBrains Mono", monospace;
+            }
         }
     }
 
@@ -258,6 +266,125 @@
                 position: absolute;
                 left: -300px;
                 top: 14px;
+            }
+        }
+    }
+}
+
+// footer 
+
+.footer {
+    background-image: url('../img/bg-stars.png');
+    background-size: 100%;
+    padding-top: 150px;
+
+    ul {
+        list-style-type: none;
+    }
+
+    &__container {
+    }
+
+    &__logo {
+        margin-bottom: 15px;
+
+        a {
+            font-family: "Inter";
+            font-size: 28px;
+            color: white;
+        }
+    }
+}
+
+.footer-t {
+    display: flex;
+
+    &__start {
+        margin-right: auto;
+
+        p {
+            font-family: "Inter";
+            color: #787878;
+            line-height: 150%;
+            max-width: 420px;
+        }
+    }
+
+    &__pay {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        width: 170px;
+        height: 54px;
+        box-sizing: border-box;
+        border-radius: 5px;
+        background: rgb(14, 14, 39);
+        margin-top: 25px;
+
+        color: #787878;
+
+        transition: all 0.3s;
+
+        &:hover {
+            background: #C08A70;
+            color: #fff;
+        }
+    }
+
+    &__column {
+        margin-left: 47px;
+
+        h3 {
+            font-size: 20px;
+            color: #787878;
+            margin-bottom: 25px;
+        }
+
+        ul {
+            li {
+                margin-bottom: 15px;
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+
+                a {
+                    color: #fff;
+                    transition: all 0.3s;
+
+                    &:hover {
+                        color: #CF88E2;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.footer-b {
+    display: flex;
+    margin-top: 75px;
+    margin-bottom: 40px;
+
+    &__copyright {
+        font-weight: 'Inter';
+        font-size: 14px;
+        color: #b5b5b5;
+        margin-right: auto;
+    }
+
+    ul {
+        display: flex;
+        gap: 24px;
+        font-size: 14px;
+
+        a {
+            color: rgba(#fff, 0.7);
+            transition: all 0.3s;
+
+            &:hover {
+                color: #CF88E2;
             }
         }
     }
