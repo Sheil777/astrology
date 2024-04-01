@@ -104,20 +104,52 @@
 .feedback {
 
     &__container {
+        h2 {
+            font-family: "Cormorant SC";
+            font-size: 50px;
+            font-weight: 500; // Medium
+            text-align: center;
+            margin-bottom: 60px;
+        }
     }
 
     &__slider {
+        overflow: visible;
     }
 
     &__slide {
+    }
+
+    &__decor-t, &__decor-b {
+        img {
+            width: 100%;
+        }
+    }
+
+    &__inner {
+        position: relative;
+        background: rgb(14, 14, 39);
+        min-height: 500px;
+        // height: 100%;
+        padding: 30px 70px 70px 30px;
+        box-sizing: border-box;
     }
 
     &__stars {
     }
 
     &__text {
+        line-height: 150%;
+        margin-top: 30px;
     }
 
     &__user {
+        font-family: 'Inter';
+        color: #787878;
+        font-size: 20px;
+        
+        position: absolute;
+        left: 30px;
+        bottom: 20px;
     }
 }
