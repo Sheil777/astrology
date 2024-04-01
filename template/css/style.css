@@ -164,4 +164,61 @@ body {
   position: absolute;
   left: 30px;
   bottom: 20px;
+}
+
+.faq {
+  background-image: url("../img/bg-stars.png");
+  background-size: 100%;
+}
+.faq__container h2 {
+  font-family: "Cormorant SC";
+  text-align: center;
+  font-size: 50px;
+  font-weight: 500;
+  line-height: 110%;
+  padding-top: 150px;
+  padding-bottom: 94px;
+}
+
+.question {
+  display: flex;
+}
+.question.second {
+  margin-top: 90px;
+}
+.question__text {
+  border: 1px solid #666666;
+  border-radius: 10px;
+  padding: 25px;
+  box-sizing: border-box;
+}
+.question h3 {
+  font-family: "Mulish";
+  font-size: 24px;
+  line-height: 115%;
+  font-weight: 500;
+  padding-bottom: 15px;
+}
+.question p {
+  font-family: "Mulish";
+  font-weight: 500;
+  line-height: 150%;
+  color: #787878;
+}
+.question p span {
+  color: #fff;
+}
+.question__left {
+  flex: 0 1 600px;
+}
+.question__left.second {
+  margin-top: -80px;
+}
+.question__right {
+  flex: 1;
+}
+.question__right.first {
+  margin-left: 120px;
+  margin-right: -200px;
+  margin-top: -85px;
 }/*# sourceMappingURL=style.css.map */
