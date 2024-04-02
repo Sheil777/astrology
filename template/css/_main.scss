@@ -108,12 +108,14 @@
 .form {
     margin-top: 87px;
     margin-left: 172px;
+    // z-index: 23;
+    width: 524px;
 
     &__wrapper {
     }
 
     &__slide {
-        width: 524px;
+        // width: 524px;
     }
 
     &__decoration {
@@ -147,9 +149,16 @@
     }
 
     &__completed {
-        width: 20%;
         height: 100%;
         background: linear-gradient(0.00deg, rgb(23, 17, 91) 3%,rgb(33, 23, 71) 24%,rgb(172, 104, 204) 77%,rgb(235, 153, 255) 98%);
+
+        &_20 {
+            width: 20%;
+        }
+
+        &_40 {
+            width: 40%;
+        }
     }
 
     &__header {
@@ -157,6 +166,63 @@
         font-size: 36px;
         text-align: center;
         margin-top: 25px;
+    }
+
+    &__radio {
+        display: none;
+
+        &:checked + .form__radio-label::after {
+            transform: scale(1);
+        }
+
+        &:checked + .form__radio-label::before {
+            background-color: #01080E;
+        }
+
+        &-buttons {
+            text-align: center;
+            margin-top: 60px;
+            margin-bottom: -10px;
+        }
+
+        &-label {
+            display: inline-flex;
+            align-items: center;
+            margin-right: 40px;
+            position: relative;
+            
+            span {
+                font-size: 18px;
+                font-weight: 400; /* Regular */
+                color: #fff;
+                font-family: "JetBrains Mono", monospace;
+            }
+
+            &:last-child {
+                margin-right: 0;
+            }
+
+            &::before {
+                content: '';
+                flex: 0 0 18px;
+                height: 18px;
+                border: 2px solid #01080E;
+                border-radius: 3px;
+                margin-right: 15px;
+
+                transition: all 0.3s;
+            }
+
+            &::after {
+                content: url('../img/icons/checked.svg');
+                position: absolute;
+                top: 0;
+                left: 5px;
+                transform: scale(0);
+
+                transition: all 0.3s;
+            }
+        }
     }
 
     &__input {
@@ -193,10 +259,17 @@
     }
 
     &__next {
-        position: relative;
+        position: absolute;
+        bottom: 50px;
+        left: 50%;
+        transform: translateX(-50%);
+
         width: 324px;
         height: 100px;
         margin: 0 auto;
+        // margin-top: 60px;
+
+        // z-index: 25;
 
         img {
             position: absolute;
@@ -206,18 +279,26 @@
 
         div {
             position: absolute;
-            top: 0;
-            left: 0;
+            top: 22px;
+            left: 48px;
 
             display: flex;
             justify-content: center;
             align-items: center;
 
             height: 57px;
-            width: 231px;
+            width: 230px;
             background: #272936;
 
+            transition: all 0.3s;
 
+        }
+
+        &:hover {
+            div {
+                background: #C08A70;
+                cursor: pointer;
+            }
         }
     }
 }
