@@ -1,8 +1,7 @@
 const swiperForm = new Swiper('.form', {
   slidesPerView: 1,
   effect: "cube",
-  allowTouchMove: false,
-
+  // allowTouchMove: false,
 });
 
 const swiperFeedback = new Swiper('.feedback__slider', {
@@ -13,9 +12,12 @@ const swiperFeedback = new Swiper('.feedback__slider', {
 const butNext = document.querySelectorAll('.form__next');
 butNext.forEach(element => {
   element.addEventListener('click', function(){
-    
+    const slide = element.closest('.form__slide');
+    const require = slide.querySelectorAll('.require');
+
+    console.log(require);
 
     // Смена слайда
-    swiperForm.slideNext();
+    // swiperForm.slideNext();
   });
 });
