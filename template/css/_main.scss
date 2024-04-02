@@ -73,6 +73,7 @@
     height: 1300px;
 
     &__container {
+        display: flex;
     }
 
     &__left {
@@ -103,6 +104,124 @@
     &__right {
     }
 }
+
+.form {
+    margin-top: 87px;
+    margin-left: 172px;
+
+    &__wrapper {
+    }
+
+    &__slide {
+        width: 524px;
+    }
+
+    &__decoration {
+        text-align: center;
+        margin-bottom: -1px;
+
+        img {
+            width: 96%;
+        }
+    }
+
+    &__inner {
+        height: 817px;
+
+        box-sizing: border-box;
+        border-radius: 10px;
+        backdrop-filter: blur(133.5px);
+        background: rgba(0, 7, 17, 0.22);
+        padding-top: 50px;
+
+        border: 1px solid #383346;
+    }
+
+    &__progress {
+        width: 400px;
+        height: 10px;
+        background: #01080E;
+        padding: 2px;
+        box-sizing: border-box;
+        margin: 0 auto;
+    }
+
+    &__completed {
+        width: 20%;
+        height: 100%;
+        background: linear-gradient(0.00deg, rgb(23, 17, 91) 3%,rgb(33, 23, 71) 24%,rgb(172, 104, 204) 77%,rgb(235, 153, 255) 98%);
+    }
+
+    &__header {
+        font-family: "Cormorant SC";
+        font-size: 36px;
+        text-align: center;
+        margin-top: 25px;
+    }
+
+    &__input {
+        display: block;
+        width: 398px;
+        height: 60px;
+        border-radius: 3px;
+        background: #01080E;
+        padding: 0 25px;
+        box-sizing: border-box;
+
+        font-size: 18px;
+        font-weight: 400; /* Regular */
+        color: #fff;
+        font-family: "JetBrains Mono", monospace;
+
+        margin: 0 auto;
+        margin-top: 60px;
+    }
+
+    &__text {
+        padding: 0 50px;
+        color: #787878;
+        margin-top: 50px;
+
+        p {
+            margin-top: 20px;
+            line-height: 150%;
+
+            &:first-child {
+                margin-top: 0;
+            }
+        }
+    }
+
+    &__next {
+        position: relative;
+        width: 324px;
+        height: 100px;
+        margin: 0 auto;
+
+        img {
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        div {
+            position: absolute;
+            top: 0;
+            left: 0;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            height: 57px;
+            width: 231px;
+            background: #272936;
+
+
+        }
+    }
+}
+
 
 // feedback
 

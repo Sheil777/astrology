@@ -116,6 +116,9 @@ body {
 .promo {
   height: 1300px;
 }
+.promo__container {
+  display: flex;
+}
 .promo__left {
   position: relative;
   z-index: 5;
@@ -137,6 +140,99 @@ body {
 .promo__text span {
   color: #787878;
 }
+.form {
+  margin-top: 87px;
+  margin-left: 172px;
+}
+.form__slide {
+  width: 524px;
+}
+.form__decoration {
+  text-align: center;
+  margin-bottom: -1px;
+}
+.form__decoration img {
+  width: 96%;
+}
+.form__inner {
+  height: 817px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  -webkit-backdrop-filter: blur(133.5px);
+          backdrop-filter: blur(133.5px);
+  background: rgba(0, 7, 17, 0.22);
+  padding-top: 50px;
+  border: 1px solid #383346;
+}
+.form__progress {
+  width: 400px;
+  height: 10px;
+  background: #01080E;
+  padding: 2px;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+.form__completed {
+  width: 20%;
+  height: 100%;
+  background: linear-gradient(0deg, rgb(23, 17, 91) 3%, rgb(33, 23, 71) 24%, rgb(172, 104, 204) 77%, rgb(235, 153, 255) 98%);
+}
+.form__header {
+  font-family: "Cormorant SC";
+  font-size: 36px;
+  text-align: center;
+  margin-top: 25px;
+}
+.form__input {
+  display: block;
+  width: 398px;
+  height: 60px;
+  border-radius: 3px;
+  background: #01080E;
+  padding: 0 25px;
+  box-sizing: border-box;
+  font-size: 18px;
+  font-weight: 400; /* Regular */
+  color: #fff;
+  font-family: "JetBrains Mono", monospace;
+  margin: 0 auto;
+  margin-top: 60px;
+}
+.form__text {
+  padding: 0 50px;
+  color: #787878;
+  margin-top: 50px;
+}
+.form__text p {
+  margin-top: 20px;
+  line-height: 150%;
+}
+.form__text p:first-child {
+  margin-top: 0;
+}
+.form__next {
+  position: relative;
+  width: 324px;
+  height: 100px;
+  margin: 0 auto;
+}
+.form__next img {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.form__next div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 57px;
+  width: 231px;
+  background: #272936;
+}
+
 .feedback__container h2 {
   font-family: "Cormorant SC";
   font-size: 50px;
