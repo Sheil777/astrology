@@ -130,6 +130,7 @@
     &__inner {
         height: 817px;
 
+        padding: 0 50px;
         box-sizing: border-box;
         border-radius: 10px;
         backdrop-filter: blur(133.5px);
@@ -158,6 +159,18 @@
 
         &_40 {
             width: 40%;
+        }
+
+        &_60 {
+            width: 60%;
+        }
+
+        &_80 {
+            width: 80%;
+        }
+
+        &_100 {
+            width: 100%;
         }
     }
 
@@ -190,6 +203,14 @@
             align-items: center;
             margin-right: 40px;
             position: relative;
+
+            cursor: pointer;
+
+            &_nr {
+                width: 398px;
+                margin: 0 auto;
+                margin-top: 15px;
+            }
             
             span {
                 font-size: 18px;
@@ -226,6 +247,22 @@
     }
 
     &__input {
+        &-block {
+            margin-top: 60px;
+
+            &.mt35 {
+                margin-top: 35px;
+            }
+
+            &.mt20 {
+                margin-top: 20px;
+            }
+        }
+
+        &.w100 {
+            width: 100%;
+        }
+
         display: block;
         width: 398px;
         height: 60px;
@@ -240,13 +277,20 @@
         font-family: "JetBrains Mono", monospace;
 
         margin: 0 auto;
-        margin-top: 60px;
+        margin-bottom: 10px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
     }
 
     &__text {
-        padding: 0 50px;
         color: #787878;
         margin-top: 50px;
+
+        &.mt40 {
+            margin-top: 40px;
+        }
 
         p {
             margin-top: 20px;

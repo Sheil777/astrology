@@ -61,7 +61,9 @@
                                             </div>
                                         </div>
                                         <h2 class="form__header">Введите ваше имя</h2>
-                                        <input class="form__input" type="text" placeholder="Михаил">
+                                        <div class="form__input-block">
+                                            <input class="form__input" type="text" placeholder="Михаил">
+                                        </div>
                                         <div class="form__text">
                                             <p>Ввод имени необходим для того, чтобы персонализировать процесс чтения натальной карты, делая интерпретацию более направленной именно на вас, что способствует более глубокому пониманию и самопринятию.</p>
                                             <p>Это создает ощущение близости и индивидуального подхода, важное для того, чтобы вы чувствовали уверенность и заботу при получении вашего астрологического профиля.</p>
@@ -90,13 +92,93 @@
                                             <input class="form__radio" id="form-w" name="gender" type="radio" value="w">
                                             <label class="form__radio-label" for="form-w"><span>Женский</span></label>
                                         </div>
-                                        
+
                                         <div class="form__text">
                                             <p>Указание вашего пола помогает нам уточнить социокультурный контекст, в котором вы были воспитаны, и его влияние на формирование вашей личности. В различных культурах на мужчин и женщин оказывают давление разные ожидания, что может отобразиться в вашей натальной карте. Этот вопрос помогает точнее интерпретировать планетные влияния в контексте гендерных аспектов.</p>
                                         </div>
                                         <div class="form__next">
                                             <img src="./template/img/button-edging.png" alt="Декорация">
                                             <div>Следующий вопрос</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="form__slide swiper-slide">
+                                    <div class="form__decoration">
+                                        <img src="./template/img/edging.png" alt="Декорация">
+                                    </div>
+                                    <div class="form__inner">
+                                        <div class="form__progress">
+                                            <div class="form__completed form__completed_60">
+                                            </div>
+                                        </div>
+                                        <h2 class="form__header">Ваша дата рождения?</h2>
+                                        <div class="form__input-block mt35">
+                                            <input class="form__input" type="text" placeholder="День">
+                                            <input class="form__input" type="text" placeholder="Месяц">
+                                            <input class="form__input" type="text" placeholder="Год">
+                                        </div>
+                                        <div class="form__text mt40">
+                                            <p>Этот вопрос ключевой для создания вашего уникального астрологического профиля. Дата рождения определяет ваш зодиакальный знак, который является основой для анализа вашего характера и жизненного пути. Зная дату рождения, мы можем выявить силы и таланты, закладываемые звездами, и предложить направления для их развития.</p>
+                                        </div>
+                                        <div class="form__next">
+                                            <img src="./template/img/button-edging.png" alt="Декорация">
+                                            <div>Следующий вопрос</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="form__slide swiper-slide">
+                                    <div class="form__decoration">
+                                        <img src="./template/img/edging.png" alt="Декорация">
+                                    </div>
+                                    <div class="form__inner">
+                                        <div class="form__progress">
+                                            <div class="form__completed form__completed_80">
+                                            </div>
+                                        </div>
+                                        <h2 class="form__header">Ваше время рождения?</h2>
+                                        <div class="form__input-block mt20">
+                                            <input class="form__input w100" type="text" placeholder="Часы">
+                                            <input class="form__input w100" type="text" placeholder="Минуты">
+                                        </div>
+                                        
+
+                                        <input class="form__radio" id="form-notRemember" name="gender" type="radio" value="m">
+                                        <label class="form__radio-label form__radio-label_nr" for="form-notRemember">
+                                            <span>Я не помню точного времени</span>
+                                        </label>
+
+                                        <div class="form__text mt40">
+                                            <p>Ваше время рождения необходимо для расчета асцендента, или восходящего знака, который определяет ваше первое доминирующее впечатление, индивидуальный стиль и подход к новым начинаниям. Асцендент оказывает сильное влияние на ваше восприятие окружающих и на то, как окружающие вас воспринимают. Это ключ к пониманию личных границ и потенциала для роста.</p>
+                                        </div>
+                                        <div class="form__next">
+                                            <img src="./template/img/button-edging.png" alt="Декорация">
+                                            <div>Следующий вопрос</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="form__slide swiper-slide">
+                                    <div class="form__decoration">
+                                        <img src="./template/img/edging.png" alt="Декорация">
+                                    </div>
+                                    <div class="form__inner">
+                                        <div class="form__progress">
+                                            <div class="form__completed form__completed_100">
+                                            </div>
+                                        </div>
+                                        <h2 class="form__header">Ваше место рождения?</h2>
+                                        <div class="form__input-block mt20">
+                                            <input class="form__input w100" type="text" placeholder="Город рождения">
+                                        </div>
+
+                                        <div class="form__text mt40">
+                                            <p>Точное место рождения необходимо для определения вашего местного времени относительно всемирного координированного времени (UTC). Это позволяет нам точно вычислить астрологические дома, которые связаны с конкретными областями вашей жизни — от карьеры до личных отношений. Понимание этих влияний предоставит вам знания об областях жизни, где вы можете ожидать успеха или где вам, возможно, потребуется приложить больше усилий.</p>
+                                        </div>
+                                        <div class="form__next">
+                                            <img src="./template/img/button-edging.png" alt="Декорация">
+                                            <div>Рассчитать карту</div>
                                         </div>
                                     </div>
                                 </div>

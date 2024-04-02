@@ -154,6 +154,7 @@ body {
 }
 .form__inner {
   height: 817px;
+  padding: 0 50px;
   box-sizing: border-box;
   border-radius: 10px;
   -webkit-backdrop-filter: blur(133.5px);
@@ -180,6 +181,15 @@ body {
 .form__completed_40 {
   width: 40%;
 }
+.form__completed_60 {
+  width: 60%;
+}
+.form__completed_80 {
+  width: 80%;
+}
+.form__completed_100 {
+  width: 100%;
+}
 .form__header {
   font-family: "Cormorant SC";
   font-size: 36px;
@@ -205,6 +215,12 @@ body {
   align-items: center;
   margin-right: 40px;
   position: relative;
+  cursor: pointer;
+}
+.form__radio-label_nr {
+  width: 398px;
+  margin: 0 auto;
+  margin-top: 15px;
 }
 .form__radio-label span {
   font-size: 18px;
@@ -245,12 +261,29 @@ body {
   color: #fff;
   font-family: "JetBrains Mono", monospace;
   margin: 0 auto;
+  margin-bottom: 10px;
+}
+.form__input-block {
   margin-top: 60px;
 }
+.form__input-block.mt35 {
+  margin-top: 35px;
+}
+.form__input-block.mt20 {
+  margin-top: 20px;
+}
+.form__input.w100 {
+  width: 100%;
+}
+.form__input:last-child {
+  margin-bottom: 0;
+}
 .form__text {
-  padding: 0 50px;
   color: #787878;
   margin-top: 50px;
+}
+.form__text.mt40 {
+  margin-top: 40px;
 }
 .form__text p {
   margin-top: 20px;

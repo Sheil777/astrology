@@ -2,7 +2,7 @@ const swiperForm = new Swiper('.form', {
   slidesPerView: 1,
   effect: "cube",
   // effect: "flip",
-  initialSlide: 1,
+  // initialSlide: 1,
 });
 
 
