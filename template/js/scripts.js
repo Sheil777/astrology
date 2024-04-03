@@ -10,6 +10,22 @@ const swiperFeedback = new Swiper('.feedback__slider', {
   slidesPerView: 2.7,
 });
 
+// Фалажок в форме на времени рождения
+// В случае клика удаляем ошибки и обрабатываем input'ы
+const gButtonNR = document.querySelector('#form-notRemember');
+const gInputs = gButtonNR.closest('.form__slide').querySelectorAll('.require');
+gButtonNR.addEventListener('change', function(){
+  gInputs.forEach(element => {
+    formRemoveError(element);
+
+    element.value = "";
+    if(gButtonNR.checked)
+      element.setAttribute('readonly', '');
+    else
+      element.removeAttribute('readonly');
+  })
+})
+
 const butNext = document.querySelectorAll('.form__next');
 butNext.forEach(element => {
   // Клик по кнопке
@@ -17,25 +33,35 @@ butNext.forEach(element => {
     const slide = element.closest('.form__slide');
     const require = slide.querySelectorAll('.require');
     const radioButtonsInSlide = slide.querySelectorAll('.require[type="radio"]');
+    const buttonNoRemember = slide.querySelector('#form-notRemember');
     let errors = false;
+    let butNRchecked = false;
+
+    if(buttonNoRemember){
+      if(buttonNoRemember.checked){
+        butNRchecked = true;
+      }
+    }
 
     // Пребираем все input'ы
-    for(let i = 0; i < require.length; i++){
-      let element = require[i];
+    if(!butNRchecked){
+      for(let i = 0; i < require.length; i++){
+        let element = require[i];
 
-      // Убираем все ошибки
-      formRemoveError(element);
+        // Убираем все ошибки
+        formRemoveError(element);
 
-      // Вешаем событие на снятие ошибки
-      element.addEventListener('click', function(){
-        formRemoveError(this);
-      });
+        // Вешаем событие на снятие ошибки
+        element.addEventListener('click', function(){
+          formRemoveError(this);
+        });
 
-      // Проверяем input'ы
-      if(element.value.trim() === "") {
-        formAddError(element);
-        errors = true;
-        // alert('Заполните обязательные поля!');
+        // Проверяем input'ы
+        if(element.value.trim() === "") {
+          formAddError(element);
+          errors = true;
+          // alert('Заполните обязательные поля!');
+        }
       }
     }
 
