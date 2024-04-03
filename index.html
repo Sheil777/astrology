@@ -62,7 +62,7 @@
                                         </div>
                                         <h2 class="form__header">Введите ваше имя</h2>
                                         <div class="form__input-block">
-                                            <input class="form__input require" type="text" tabindex="-1" placeholder="Михаил" onkeydown="return /[a-z]/i.test(event.key)">
+                                            <input class="form__input require" type="text" tabindex="-1" placeholder="Михаил" onkeydown="return /[a-zа-яё ]/i.test(event.key)">
                                         </div>
                                         <div class="form__text">
                                             <p>Ввод имени необходим для того, чтобы персонализировать процесс чтения натальной карты, делая интерпретацию более направленной именно на вас, что способствует более глубокому пониманию и самопринятию.</p>
@@ -170,7 +170,7 @@
                                         </div>
                                         <h2 class="form__header">Ваше место рождения?</h2>
                                         <div class="form__input-block mt20">
-                                            <input class="form__input w100 require" type="text" tabindex="-1" placeholder="Город рождения">
+                                            <input class="form__input w100 require" type="text" tabindex="-1" placeholder="Город рождения" onkeydown="return /[a-zа-яё .,]/i.test(event.key)">
                                         </div>
 
                                         <div class="form__text mt40">
