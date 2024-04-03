@@ -84,6 +84,7 @@ body {
   display: flex;
   justify-content: center;
   gap: 30px;
+  margin-left: -180px;
 }
 .menu__link {
   color: #D4D4D4;
