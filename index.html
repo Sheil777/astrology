@@ -62,7 +62,7 @@
                                         </div>
                                         <h2 class="form__header">Введите ваше имя</h2>
                                         <div class="form__input-block">
-                                            <input class="form__input require" type="text" placeholder="Михаил">
+                                            <input class="form__input require" type="text" tabindex="-1" placeholder="Михаил" onkeydown="return /[a-z]/i.test(event.key)">
                                         </div>
                                         <div class="form__text">
                                             <p>Ввод имени необходим для того, чтобы персонализировать процесс чтения натальной карты, делая интерпретацию более направленной именно на вас, что способствует более глубокому пониманию и самопринятию.</p>
@@ -114,9 +114,9 @@
                                         </div>
                                         <h2 class="form__header">Ваша дата рождения?</h2>
                                         <div class="form__input-block mt35">
-                                            <input class="form__input require" type="text" placeholder="День">
-                                            <input class="form__input require" type="text" placeholder="Месяц">
-                                            <input class="form__input require" type="text" placeholder="Год">
+                                            <input class="form__input require" type="number" tabindex="-1" placeholder="День" min="1" max="31">
+                                            <input class="form__input require" type="number" tabindex="-1" placeholder="Месяц" min="1" max="12">
+                                            <input class="form__input require" type="number" tabindex="-1" placeholder="Год" min="1" max="9999">
                                         </div>
                                         <div class="form__text mt40">
                                             <p>Этот вопрос ключевой для создания вашего уникального астрологического профиля. Дата рождения определяет ваш зодиакальный знак, который является основой для анализа вашего характера и жизненного пути. Зная дату рождения, мы можем выявить силы и таланты, закладываемые звездами, и предложить направления для их развития.</p>
@@ -139,8 +139,8 @@
                                         </div>
                                         <h2 class="form__header">Ваше время рождения?</h2>
                                         <div class="form__input-block mt20">
-                                            <input class="form__input require w100" type="text" placeholder="Часы">
-                                            <input class="form__input require w100" type="text" placeholder="Минуты">
+                                            <input class="form__input require w100" type="number" tabindex="-1" placeholder="Часы" max="24">
+                                            <input class="form__input require w100" type="number" tabindex="-1" placeholder="Минуты" max="60">
                                         </div>
                                         
 
@@ -170,7 +170,7 @@
                                         </div>
                                         <h2 class="form__header">Ваше место рождения?</h2>
                                         <div class="form__input-block mt20">
-                                            <input class="form__input w100 require" type="text" placeholder="Город рождения">
+                                            <input class="form__input w100 require" type="text" tabindex="-1" placeholder="Город рождения">
                                         </div>
 
                                         <div class="form__text mt40">

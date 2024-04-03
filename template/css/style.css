@@ -279,6 +279,14 @@ body {
 .form__input.w100 {
   width: 100%;
 }
+.form__input[type=number] {
+  -moz-appearance: textfield;
+  -webkit-appearance: textfield;
+  appearance: textfield;
+}
+.form__input[type=number]::-webkit-outer-spin-button, .form__input[type=number]::-webkit-inner-spin-button {
+  display: none;
+}
 .form__input:focus {
   outline: none;
   outline: 2px solid #A665C7;

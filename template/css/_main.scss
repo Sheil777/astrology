@@ -269,6 +269,17 @@
             width: 100%;
         }
 
+        &[type="number"] {
+            -moz-appearance: textfield;
+            -webkit-appearance: textfield;
+            appearance: textfield;
+        }
+         
+        &[type="number"]::-webkit-outer-spin-button,
+        &[type="number"]::-webkit-inner-spin-button {
+            display: none;
+        }
+
         display: block;
         width: 398px;
         height: 60px;
