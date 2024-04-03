@@ -46,12 +46,13 @@ butNext.forEach(element => {
     }else{
       radioChecked = false; // Кнопки есть
     }
+
     radioButtonsInSlide.forEach(element => { // Проверяем есть ли выбранные
-        // Если есть отмеченные
-        if(element.checked) {
-          radioChecked = true;
-        }
+      if(element.checked) {                  
+        radioChecked = true;
+      }
     });
+
     if(radioChecked == false){
       radioButtonsInSlide.forEach(element => {
         formAddError(element);

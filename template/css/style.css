@@ -283,6 +283,9 @@ body {
   outline: none;
   outline: 2px solid #A665C7;
 }
+.form__input:focus[readonly] {
+  outline: none;
+}
 .form__input:last-child {
   margin-bottom: 0;
 }
