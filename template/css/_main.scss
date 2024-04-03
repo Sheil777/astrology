@@ -245,6 +245,10 @@
 
                 transition: all 0.3s;
             }
+
+            &._error::before {
+                box-shadow: 0 0 10px red;
+            }
         }
     }
 
@@ -281,8 +285,17 @@
         margin: 0 auto;
         margin-bottom: 10px;
 
+        &:focus {
+            outline: none;
+            outline: 2px solid #A665C7;
+        }
+
         &:last-child {
             margin-bottom: 0;
+        }
+
+        &._error {
+            box-shadow: 0 0 10px red;
         }
     }
 
@@ -309,7 +322,7 @@
         bottom: 50px;
         left: 50%;
         transform: translateX(-50%);
-        
+
         cursor: pointer;
 
         width: 324px;

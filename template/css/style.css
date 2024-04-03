@@ -249,6 +249,9 @@ body {
   transform: scale(0);
   transition: all 0.3s;
 }
+.form__radio-label._error::before {
+  box-shadow: 0 0 10px red;
+}
 .form__input {
   display: block;
   width: 398px;
@@ -276,8 +279,15 @@ body {
 .form__input.w100 {
   width: 100%;
 }
+.form__input:focus {
+  outline: none;
+  outline: 2px solid #A665C7;
+}
 .form__input:last-child {
   margin-bottom: 0;
+}
+.form__input._error {
+  box-shadow: 0 0 10px red;
 }
 .form__text {
   color: #787878;
