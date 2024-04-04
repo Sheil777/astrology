@@ -175,10 +175,10 @@
                                             <p>Ввод имени необходим для того, чтобы персонализировать процесс чтения натальной карты, делая интерпретацию более направленной именно на вас, что способствует более глубокому пониманию и самопринятию.</p>
                                             <p>Это создает ощущение близости и индивидуального подхода, важное для того, чтобы вы чувствовали уверенность и заботу при получении вашего астрологического профиля.</p>
                                         </div>
-                                        <div class="form__next">
+                                        <a href="#popup-calc" class="form__next popup-link form__done">
                                             <img src="./template/img/button-edging.png" alt="Декорация">
                                             <div>Рассчитать карту</div>
-                                        </div>
+                                        </a>
                                     </div>
                                 </div>
                             
@@ -358,7 +358,7 @@
                 </div>
             </div>
         </footer>
-        <div id="popup popup-calc" class="popup popup-calc open">
+        <div id="popup-calc" class="popup popup-calc popup__noClose">
             <div class="popup__body popup-calc__body">
                 <div class="popup__content popup-calc__content">
                     <div class="popup-calc__decoration">
@@ -405,8 +405,41 @@
                 </div>
             </div>
         </div>
+        <div id="popup-done" class="popup popup-done open">
+            <div class="popup__body popup-done__body">
+                <div class="popup__content popup-done__content">
+                    <div class="popup-done__decoration">
+                        <img src="./template/img/edging.png" alt="Декорация">
+                    </div>
+                    <div class="popup-done__inner">
+                        <h2>Ваша натальная карта расшифрована</h2>
+                        <h3>В расшифровку входят следующие темы:</h3>
+                        <ul>
+                            <li>Ваши врожденные потенциалы и слабости</li>
+                            <li>Ваши сильные таланты</li>
+                            <li>Ваш личностный рост</li>
+                            <li>Ваша карьера</li>
+                            <li>Ваши отношения</li>
+                            <li>Ваше здоровье</li>
+                            <li>Ваше будущее</li>
+                        </ul>
+                        <p class="popup-done__promotion">Акция!</p>
+                        <p class="popup-done__promotion-text">Первая натальная карта всего за 1 рубль.</p>
+                        <input class="popup-done__input" type="text" placeholder="Введите ваш Email">
+                        <div class="popup-done__submit">
+                            <img src="./template/img/button-edging.png" alt="Декорация">
+                            <div>Получить доступ</div>
+                        </div>
+                    </div>
+                    <div class="popup-done__decoration">
+                        <img src="./template/img/edging-bottom.png" alt="Декорация">
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
     <script src="./template/js/swiper-bundle.min.js"></script>
+    <script src="./template/js/popups.js"></script>
     <script src="./template/js/scripts.js"></script>
 </body>
 </html>

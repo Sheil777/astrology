@@ -91,7 +91,6 @@ body.lock {
   box-sizing: border-box;
 }
 .popup__content {
-  background-color: #fff;
   max-width: 800px;
   padding: 30px;
   transform: perspective(600px) translate(0, -100%) rotate(45deg);
@@ -384,6 +383,7 @@ body.lock {
   width: 230px;
   background: #272936;
   transition: all 0.3s;
+  color: #fff;
 }
 .form__next:hover div {
   background: #472b74;
@@ -674,7 +674,6 @@ body.lock {
 
 .popup-calc__content {
   padding: 0;
-  background: transparent;
 }
 .popup-calc__decoration img {
   width: 100%;
@@ -721,4 +720,96 @@ body.lock {
   font-family: "Cormorant SC";
   font-size: 14px;
   padding-left: 17px;
+}
+
+.popup-done__decoration img {
+  width: 100%;
+}
+.popup-done__inner {
+  background: #0E0E27;
+  border-radius: 10px;
+  padding: 30px 150px;
+}
+.popup-done__inner h2 {
+  font-family: "Cormorant SC";
+  font-size: 36px;
+  line-height: 110%;
+  text-align: center;
+  max-width: 380px;
+  margin: 0 auto;
+}
+.popup-done__inner h3 {
+  padding-top: 40px;
+  line-height: 150%;
+  color: #787878;
+}
+.popup-done__inner ul {
+  margin-top: 15px;
+  list-style: none;
+}
+.popup-done__inner ul li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.popup-done__inner ul li:last-child {
+  margin-bottom: 0;
+}
+.popup-done__inner ul li::before {
+  content: url("../img/icons/li.svg");
+  margin-right: 10px;
+}
+.popup-done__promotion {
+  margin-top: 40px;
+  font-family: "Cormorant SC";
+  font-size: 36px;
+}
+.popup-done__promotion-text {
+  margin-top: 15px;
+}
+.popup-done__input {
+  margin-top: 25px;
+  width: 400px;
+  height: 60px;
+  padding: 0 25px;
+  background: #01080E;
+  border-radius: 5px;
+  font-family: "JetBrains Mono";
+  font-size: 18px;
+  color: white;
+}
+.popup-done__input::-moz-placeholder {
+  color: #787878;
+}
+.popup-done__input::placeholder {
+  color: #787878;
+}
+.popup-done__submit {
+  position: relative;
+  cursor: pointer;
+  width: 324px;
+  height: 100px;
+  margin: 0 auto;
+  margin-top: 40px;
+}
+.popup-done__submit img {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.popup-done__submit div {
+  position: absolute;
+  top: 22px;
+  left: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 57px;
+  width: 230px;
+  background: #272936;
+  transition: all 0.3s;
+  color: #fff;
+}
+.popup-done__submit:hover div {
+  background: #472b74;
 }/*# sourceMappingURL=style.css.map */

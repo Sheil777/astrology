@@ -371,7 +371,7 @@
             background: #272936;
 
             transition: all 0.3s;
-
+            color: #fff;
         }
 
         &:hover {
@@ -739,7 +739,6 @@
 
     &__content {
         padding: 0;
-        background: transparent;
     }
 
     &__decoration {
@@ -803,6 +802,133 @@
             font-family: "Cormorant SC";
             font-size: 14px;
             padding-left: 17px;
+        }
+    }
+}
+
+
+////
+/// 
+.popup-done {
+
+    &__body {
+    }
+
+    &__content {
+    }
+
+    &__decoration {
+        img {
+            width: 100%;
+        }
+    }
+
+    &__inner {
+        background: #0E0E27;
+        border-radius: 10px;
+        padding: 30px 150px;
+
+        h2 {
+            font-family: "Cormorant SC";
+            font-size: 36px;
+            line-height: 110%;
+            text-align: center;
+            max-width: 380px;
+            margin: 0 auto;
+        }
+
+        h3 {
+            padding-top: 40px;
+            line-height: 150%;
+            color: #787878;
+        }
+
+        ul {
+            margin-top: 15px;
+            list-style: none;
+
+            li {
+                display: flex;
+                align-items: center;
+                margin-bottom: 10px;
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+
+                &::before {
+                    content: url('../img/icons/li.svg');
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
+
+    &__promotion {
+        margin-top: 40px;
+        font-family: "Cormorant SC";
+        font-size: 36px;
+    }
+
+    &__promotion-text {
+        margin-top: 15px;
+    }
+
+    &__input {
+        margin-top: 25px;
+        width: 400px;
+        height: 60px;
+        padding: 0 25px;
+        background: #01080E;
+        border-radius: 5px;
+
+        font-family: "JetBrains Mono";
+        font-size: 18px;
+        color: white;
+
+
+        &::placeholder {
+            color: #787878;
+        }
+    }
+
+    &__submit {
+        position: relative;
+
+        cursor: pointer;
+
+        width: 324px;
+        height: 100px;
+        margin: 0 auto;
+        margin-top: 40px;
+
+        img {
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        div {
+            position: absolute;
+            top: 22px;
+            left: 48px;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            height: 57px;
+            width: 230px;
+            background: #272936;
+
+            transition: all 0.3s;
+            color: #fff;
+        }
+
+        &:hover {
+            div {
+                background: #472b74;
+            }
         }
     }
 }
