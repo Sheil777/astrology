@@ -60,6 +60,49 @@ body {
 }
  */
 /* ----------------------------------- */
+body.lock {
+  overflow: hidden;
+}
+
+.popup {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  top: 0;
+  left: 0;
+  z-index: 100;
+  opacity: 0;
+  visibility: hidden;
+  overflow-y: auto;
+  overflow-x: hidden;
+  transition: all 0.8s;
+}
+.popup.open {
+  opacity: 1;
+  visibility: visible;
+}
+.popup__body {
+  min-height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 10px;
+  box-sizing: border-box;
+}
+.popup__content {
+  background-color: #fff;
+  max-width: 800px;
+  padding: 30px;
+  transform: perspective(600px) translate(0, -100%) rotate(45deg);
+  opacity: 0;
+  transition: all 0.8s;
+}
+.popup.open .popup__content {
+  transform: perspective(600px) translate(0px, 0px) rotate(0deg);
+  opacity: 1;
+}
+
 .header {
   position: absolute;
   top: 0;
@@ -627,4 +670,55 @@ body {
 }
 .footer-b ul a:hover {
   color: #CF88E2;
+}
+
+.popup-calc__content {
+  padding: 0;
+  background: transparent;
+}
+.popup-calc__decoration img {
+  width: 100%;
+}
+.popup-calc__inner {
+  background: #0E0E27;
+  padding: 30px 60px;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+.popup-calc__inner h2 {
+  margin-bottom: 50px;
+  font-size: 42px;
+  font-family: "Cormorant SC";
+  line-height: 110%;
+  text-align: center;
+}
+.popup-calc__inner ul {
+  list-style: none;
+}
+.popup-calc__inner ul li {
+  margin-bottom: 25px;
+}
+.popup-calc__inner ul li:last-child {
+  margin-bottom: 0;
+}
+.popup-calc__inner ul li p {
+  line-height: 150%;
+  color: #787878;
+}
+.popup-calc__progress {
+  width: 500px;
+  height: 20px;
+  border-radius: 10px;
+  background: #01080E;
+}
+.popup-calc__completed {
+  width: 0;
+  height: 100%;
+  border-radius: 10px;
+  background: linear-gradient(0deg, rgb(23, 17, 91) 3%, rgb(33, 23, 71) 24%, rgb(172, 104, 204) 77%, rgb(235, 153, 255) 98%);
+}
+.popup-calc__completed span {
+  font-family: "Cormorant SC";
+  font-size: 14px;
+  padding-left: 17px;
 }/*# sourceMappingURL=style.css.map */
