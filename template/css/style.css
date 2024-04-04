@@ -722,6 +722,9 @@ body.lock {
   padding-left: 17px;
 }
 
+.popup-done__body {
+  padding: 10px;
+}
 .popup-done__decoration img {
   width: 100%;
 }

@@ -7,7 +7,6 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   const swiperFeedback = new Swiper('.feedback__slider', {
-
     slidesPerView: 1,
     spaceBetween: 25,
 
@@ -157,8 +156,12 @@ document.addEventListener("DOMContentLoaded", () => {
           prog = 0;
         }
         
-        if(indexEl == popupComp.length)
+        if(indexEl == popupComp.length){
           clearInterval(timerId);
+
+          const popup = document.getElementById('popup-done'); // Popup который нужно открыть
+          popupOpen(popup);
+        }
       }, 10);
     });
 
