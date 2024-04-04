@@ -40,7 +40,7 @@ body {
 ._container {
   max-width: 1300px;
   margin: 0px auto;
-  padding: 0 15px;
+  padding: 0 25px;
   box-sizing: content-box; /* Сам прибавляет padding */
 }
 
@@ -352,9 +352,39 @@ body {
   font-weight: 500;
   text-align: center;
   margin-bottom: 60px;
+  line-height: 110%;
+}
+.feedback__container h2 br {
+  display: none;
+}
+@media (max-width: 992px) {
+  .feedback__container h2 {
+    font-size: 40px;
+  }
+}
+@media (max-width: 768px) {
+  .feedback__container h2 {
+    font-size: 35px;
+  }
+  .feedback__container h2 br {
+    display: block;
+  }
+}
+@media (max-width: 480px) {
+  .feedback__container h2 {
+    margin-bottom: 35px;
+  }
+}
+@media (max-width: 410px) {
+  .feedback__container h2 {
+    font-size: 8vw;
+  }
 }
 .feedback__slider {
   overflow: visible;
+}
+.feedback__slide {
+  height: auto;
 }
 .feedback__decor-t img, .feedback__decor-b img {
   width: 100%;
@@ -362,13 +392,41 @@ body {
 .feedback__inner {
   position: relative;
   background: rgb(14, 14, 39);
-  min-height: 500px;
+  height: calc(100% - 80px);
   padding: 30px 70px 70px 30px;
   box-sizing: border-box;
+}
+@media (max-width: 576px) {
+  .feedback__inner {
+    padding-bottom: 80px;
+  }
+}
+@media (max-width: 500px) {
+  .feedback__inner {
+    padding-right: 30px;
+  }
+}
+@media (max-width: 450px) {
+  .feedback__inner {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+  }
 }
 .feedback__text {
   line-height: 150%;
   margin-top: 30px;
+}
+@media (max-width: 576px) {
+  .feedback__text {
+    font-size: 16px;
+    margin-top: 15px;
+  }
+}
+@media (max-width: 376px) {
+  .feedback__text {
+    font-size: 14px;
+  }
 }
 .feedback__user {
   font-family: "Inter";
@@ -377,6 +435,16 @@ body {
   position: absolute;
   left: 30px;
   bottom: 20px;
+}
+@media (max-width: 576px) {
+  .feedback__user {
+    font-size: 16px;
+  }
+}
+@media (max-width: 450px) {
+  .feedback__user {
+    left: 20px;
+  }
 }
 
 .faq {

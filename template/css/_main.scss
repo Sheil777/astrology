@@ -393,6 +393,31 @@
             font-weight: 500; // Medium
             text-align: center;
             margin-bottom: 60px;
+            line-height: 110%;
+
+            br {
+                display: none;
+            }
+
+            @media (max-width: 992px) {
+                font-size: 40px;
+            }
+
+            @media (max-width: 768px) {
+                font-size: 35px;
+
+                br {
+                    display: block;
+                }
+            }
+
+            @media (max-width: 480px) {
+                margin-bottom: 35px;
+            }
+
+            @media (max-width: 410px) {
+                font-size: 8vw;
+            }
         }
     }
 
@@ -401,6 +426,7 @@
     }
 
     &__slide {
+        height: auto;
     }
 
     &__decor-t, &__decor-b {
@@ -412,10 +438,26 @@
     &__inner {
         position: relative;
         background: rgb(14, 14, 39);
-        min-height: 500px;
-        // height: 100%;
+        // min-height: 500px;
+        height: calc(100% - 80px);
         padding: 30px 70px 70px 30px;
         box-sizing: border-box;
+
+        @media (max-width: 576px) {
+            // padding-bottom: 50px;
+            // padding-top: 40px;
+            padding-bottom: 80px;
+        }
+
+        @media (max-width: 500px) {
+            padding-right: 30px;
+        }
+
+        @media (max-width: 450px) {
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-top: 20px;
+        }
     }
 
     &__stars {
@@ -424,6 +466,15 @@
     &__text {
         line-height: 150%;
         margin-top: 30px;
+
+        @media (max-width: 576px) {
+            font-size: 16px;
+            margin-top: 15px;
+        }
+
+        @media (max-width: 376px) {
+            font-size: 14px;
+        }
     }
 
     &__user {
@@ -434,6 +485,14 @@
         position: absolute;
         left: 30px;
         bottom: 20px;
+
+        @media (max-width: 576px) {
+            font-size: 16px;
+        }
+
+        @media (max-width: 450px) {
+            left: 20px;
+        }
     }
 }
 

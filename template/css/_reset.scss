@@ -39,7 +39,8 @@ body {
 ._container {
     max-width: 1300px;
     margin: 0px auto;
-    padding: 0 15px;
+    // padding: 0 15px;
+    padding: 0 25px;
     box-sizing: content-box; /* Сам прибавляет padding */
     // box-sizing: border-box; /* Сам прибавляет padding */
 }

@@ -6,8 +6,24 @@ const swiperForm = new Swiper('.form', {
 });
 
 const swiperFeedback = new Swiper('.feedback__slider', {
-  spaceBetween: 20,
-  slidesPerView: 2.7,
+
+  slidesPerView: 1,
+  spaceBetween: 25,
+
+  breakpoints: {
+    724: {
+      slidesPerView: 1.5,
+      spaceBetween: 20,
+    },
+    992: {
+      slidesPerView: 2,
+      spaceBetween: 20,
+    },
+    1200: {
+      slidesPerView: 2.7,
+      spaceBetween: 20,
+    }
+  },
 });
 
 // Фалажок в форме на времени рождения
