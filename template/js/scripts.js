@@ -136,32 +136,29 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 
-
-
   // Бег полосочек
   const popupComp = document.querySelectorAll('.popup-calc__completed');
 
-  popupComp.forEach(element => {
-    loading(element);
-
-  });
-
-
-  function loading(element) {
-    const span = element.querySelector('span');
-
     let prog = 0;
+    let indexEl = 0;
     let timerId = setInterval(() => {
+      let element = popupComp[indexEl];
+      let span = element.querySelector('span');
       let percent = prog + '%';
+
       element.style.width = percent;
       span.textContent = percent;
 
       prog++;
     
-      if(prog == 101)
+      if(prog == 101){
+        indexEl++;
+        prog = 0;
+      }
+      
+      if(indexEl == popupComp.length)
         clearInterval(timerId);
+    }, 10);
 
-    }, 50);
-  }
 
 });
