@@ -90,6 +90,10 @@
         z-index: 20;
 
         pointer-events: none;
+
+        @media (max-width: 1050px) {
+            top: 700px;
+        }
     }
 }
 
@@ -102,6 +106,15 @@
 
         @media (max-width: 1370px) {
             justify-content: space-between;
+            max-width: 1060px;
+        }
+
+        @media (max-width: 900px) {
+            gap: 15px;
+        }
+
+        @media (max-width: 768px) {
+            flex-direction: column;
         }
     }
 
@@ -116,7 +129,19 @@
         font-family: "Cormorant SC";
         line-height: 110%;
         font-size: 74px;
-        font-weight: 500; /* Medium */
+        font-weight: 500; /* Medium */   
+        
+        @media (max-width: 1370px) {
+            font-size: 62px;
+        }
+
+        @media (max-width: 1050px) {
+            font-size: 50px;
+        }
+
+        @media (max-width: 900px) {
+            font-size: 42px;
+        }
     }
 
     &__text {
@@ -128,45 +153,25 @@
         span {
             color: #787878;
         }
+
+        @media (max-width: 900px) {
+            font-size: 16px;
+        }
     }
 
     &__right {
     }
 
-    
-    @media (max-width: 1370px) {
-        &__container {
-            max-width: 1060px;
-        }
-
-        &__header {
-            font-size: 62px;
-        }
-    }
 
     @media (max-width: 1050px) {
-        &__header {
-            font-size: 50px;
-        }
-
-        &__text {
-
-        }
+        height: 1090px;
     }
 }
 
 .form {
     margin-top: 108px;
     margin-left: 172px;
-    // z-index: 23;
     width: 524px;
-
-    // &__wrapper {
-    // }
-
-    &__slide {
-        // width: 524px;
-    }
 
     &__decoration {
         text-align: center;
@@ -188,6 +193,11 @@
         padding-top: 50px;
 
         border: 1px solid #383346;
+
+        @media (max-width: 1050px) {
+            height: 715px;
+            padding: 30px;
+        }
     }
 
     &__progress {
@@ -229,6 +239,19 @@
         font-size: 36px;
         text-align: center;
         margin-top: 25px;
+
+        @media (max-width: 1370px) {
+            font-size: 32px;
+        }
+
+        @media (max-width: 1050px) {
+            font-size: 30px;
+        }
+
+        @media (max-width: 900px) {
+            font-size: 28px;
+            margin-top: 15px;
+        }
     }
 
     &__radio {
@@ -362,6 +385,10 @@
         &._error {
             box-shadow: 0 0 10px red;
         }
+
+        @media (max-width: 1050px) {
+            height: 50px;
+        }
     }
 
     &__text {
@@ -370,6 +397,11 @@
 
         &.mt40 {
             margin-top: 40px;
+
+            @media (max-width: 1050px) {
+                margin-top: 30px;
+                
+            }
         }
 
         p {
@@ -378,6 +410,15 @@
 
             &:first-child {
                 margin-top: 0;
+            }
+
+            @media (max-width: 1370px) {
+                font-size: 17px;
+            }
+
+            @media (max-width: 1050px) {
+                font-size: 16px;
+                line-height: 140%;
             }
         }
     }
@@ -430,46 +471,51 @@
                 background: #472b74;
             }
         }
+
+        @media (max-width: 1050px) {
+            width: 260px;
+            height: 80px;
+            bottom: 30px;
+
+            img {
+                width: 100%;
+            }
+
+            div {
+                top: 17px;
+                left: 37px;
+                width: 186px;
+                height: 47px;
+
+                font-size: 16px;
+            }
+        }
     }
 
     @media (max-width: 1370px) {
         width: 470px;
         margin-left: 0;
-
-        &__header {
-            font-size: 32px;
-        }
-
-        &__text {
-            p {
-                font-size: 17px;
-            }
-        }
     }
 
     @media (max-width: 1050px) {
         width: 415px;
+    }
 
-        &__inner {
-            padding: 30px;
-        }
+    @media (max-width: 900px) {
+        width: 380px;
 
         &__header {
-            font-size: 30px;
+        }
+
+        &__input-block {
+            &.mt35 {
+                margin-top: 30px;
+            }
         }
 
         &__input {
-            height: 50px;
-        }
-
-        &__text {
-            &.mt40 {
-                margin-top: 30px;
-            }
-
-            p {
-                // font-size: 16px;
-            }
+            font-size: 16px;
+            padding: 0 20px;
         }
     }
 }
