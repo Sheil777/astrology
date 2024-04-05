@@ -143,14 +143,33 @@ body.lock {
 }
 
 .promo-bg {
-  position: relative;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 90%;
 }
 .promo-bg__circle {
   position: absolute;
-  right: -80px;
+  right: -64px;
   top: -51px;
   z-index: 0;
-  width: 75%;
+  height: 100%;
+}
+@media (max-width: 1700px) {
+  .promo-bg__circle {
+    right: -150px;
+  }
+}
+@media (max-width: 1550px) {
+  .promo-bg__circle {
+    right: -223px;
+  }
+}
+@media (max-width: 1400px) {
+  .promo-bg__circle {
+    right: -310px;
+  }
 }
 .promo-bg__stones {
   position: absolute;
@@ -160,10 +179,16 @@ body.lock {
 }
 
 .promo {
+  position: relative;
   height: 1300px;
 }
 .promo__container {
   display: flex;
+}
+@media (max-width: 1370px) {
+  .promo__container {
+    justify-content: space-between;
+  }
 }
 .promo__left {
   position: relative;
@@ -186,6 +211,20 @@ body.lock {
 .promo__text span {
   color: #787878;
 }
+@media (max-width: 1370px) {
+  .promo__container {
+    max-width: 1060px;
+  }
+  .promo__header {
+    font-size: 62px;
+  }
+}
+@media (max-width: 1050px) {
+  .promo__header {
+    font-size: 50px;
+  }
+}
+
 .form {
   margin-top: 108px;
   margin-left: 172px;
@@ -210,7 +249,7 @@ body.lock {
   border: 1px solid #383346;
 }
 .form__progress {
-  width: 400px;
+  max-width: 400px;
   height: 10px;
   background: #01080E;
   padding: 2px;
@@ -299,7 +338,8 @@ body.lock {
 }
 .form__input {
   display: block;
-  width: 398px;
+  width: 100%;
+  max-width: 398px;
   height: 60px;
   border-radius: 3px;
   background: #01080E;
@@ -368,6 +408,11 @@ body.lock {
   width: 324px;
   height: 100px;
   margin: 0 auto;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 .form__next img {
   position: absolute;
@@ -389,6 +434,35 @@ body.lock {
 }
 .form__next:hover div {
   background: #472b74;
+}
+@media (max-width: 1370px) {
+  .form {
+    width: 470px;
+    margin-left: 0;
+  }
+  .form__header {
+    font-size: 32px;
+  }
+  .form__text p {
+    font-size: 17px;
+  }
+}
+@media (max-width: 1050px) {
+  .form {
+    width: 415px;
+  }
+  .form__inner {
+    padding: 30px;
+  }
+  .form__header {
+    font-size: 30px;
+  }
+  .form__input {
+    height: 50px;
+  }
+  .form__text.mt40 {
+    margin-top: 30px;
+  }
 }
 
 .feedback__container h2 {
