@@ -836,16 +836,48 @@ body.lock {
   }
 }
 
+.popup__decoration img {
+  width: 100%;
+}
+.popup__inner {
+  background: #0E0E27;
+  border-radius: 10px;
+}
+.popup__submit {
+  position: relative;
+  cursor: pointer;
+  width: 324px;
+  height: 100px;
+  margin: 0 auto;
+  margin-top: 40px;
+}
+.popup__submit img {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.popup__submit div {
+  position: absolute;
+  top: 22px;
+  left: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 57px;
+  width: 230px;
+  background: #272936;
+  transition: all 0.3s;
+  color: #fff;
+}
+.popup__submit:hover div {
+  background: #472b74;
+}
+
 .popup-calc__content {
   padding: 0;
 }
-.popup-calc__decoration img {
-  width: 100%;
-}
 .popup-calc__inner {
-  background: #0E0E27;
   padding: 30px 60px;
-  border-radius: 10px;
   box-sizing: border-box;
 }
 .popup-calc__inner h2 {
@@ -889,12 +921,7 @@ body.lock {
 .popup-done__body {
   padding: 10px;
 }
-.popup-done__decoration img {
-  width: 100%;
-}
 .popup-done__inner {
-  background: #0E0E27;
-  border-radius: 10px;
   padding: 30px 150px;
 }
 .popup-done__inner h2 {
@@ -951,32 +978,20 @@ body.lock {
 .popup-done__input::placeholder {
   color: #787878;
 }
-.popup-done__submit {
-  position: relative;
-  cursor: pointer;
-  width: 324px;
-  height: 100px;
-  margin: 0 auto;
+.popup-done__input._error {
+  box-shadow: 0 0 10px red;
+}
+
+.popup-success__content h2 {
+  font-size: 36px;
+  font-family: "Cormorant SC";
+  text-align: center;
+}
+.popup-success__content p {
   margin-top: 40px;
+  text-align: center;
+  font-size: 20px;
 }
-.popup-done__submit img {
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-.popup-done__submit div {
-  position: absolute;
-  top: 22px;
-  left: 48px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 57px;
-  width: 230px;
-  background: #272936;
-  transition: all 0.3s;
-  color: #fff;
-}
-.popup-done__submit:hover div {
-  background: #472b74;
+.popup-success__inner {
+  padding: 30px 150px;
 }/*# sourceMappingURL=style.css.map */

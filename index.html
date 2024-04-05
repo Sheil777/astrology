@@ -14,7 +14,7 @@
 </head>
 <body>
     <div class="wrapper">
-        <!-- <header class="header" id="header">
+        <header class="header" id="header">
             <div class="header__container _container">
                 <a class="header__logo">
                     Лого
@@ -33,10 +33,10 @@
                     </ul>
                 </nav>
             </div>
-        </header> -->
+        </header>
 
         <main class="main">
-            <!-- <section class="promo">
+            <section class="promo">
                 <div class="promo-bg">
                     <img src="./template/img/promo/circle-big.jpg" class="promo-bg__circle" alt="">
                     <img src="./template/img/promo/stones.png" class="promo-bg__stones" alt="">
@@ -186,7 +186,7 @@
                         </div>
                     </div>
                 </div>
-            </section> -->
+            </section>
             <section class="feedback" id="feedback">
                 <div class="feedback__container _container">
                     <h2>Отзывы<br> наших пользователей</h2>
@@ -361,10 +361,10 @@
         <div id="popup-calc" class="popup popup-calc popup__noClose">
             <div class="popup__body popup-calc__body">
                 <div class="popup__content popup-calc__content">
-                    <div class="popup-calc__decoration">
+                    <div class="popup__decoration">
                         <img src="./template/img/edging.png" alt="Декорация">
                     </div>
-                    <div class="popup-calc__inner">
+                    <div class="popup__inner popup-calc__inner">
                         <h2>Подводим расчет...</h2>
                         <ul>
                             <li>
@@ -399,7 +399,7 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="popup-calc__decoration">
+                    <div class="popup__decoration">
                         <img src="./template/img/edging-bottom.png" alt="Декорация">
                     </div>
                 </div>
@@ -408,10 +408,10 @@
         <div id="popup-done" class="popup popup-done">
             <div class="popup__body popup-done__body">
                 <div class="popup__content popup-done__content">
-                    <div class="popup-done__decoration">
+                    <div class="popup__decoration">
                         <img src="./template/img/edging.png" alt="Декорация">
                     </div>
-                    <div class="popup-done__inner">
+                    <div class="popup__inner popup-done__inner">
                         <h2>Ваша натальная карта расшифрована</h2>
                         <h3>В расшифровку входят следующие темы:</h3>
                         <ul>
@@ -425,13 +425,33 @@
                         </ul>
                         <p class="popup-done__promotion">Акция!</p>
                         <p class="popup-done__promotion-text">Первая натальная карта всего за 1 рубль.</p>
-                        <input class="popup-done__input" type="text" placeholder="Введите ваш Email">
-                        <div class="popup-done__submit">
+                        <input class="popup-done__input" type="text" tabindex="-1" placeholder="Введите ваш Email">
+                        <div class="popup-done__submit popup__submit">
                             <img src="./template/img/button-edging.png" alt="Декорация">
                             <div>Получить доступ</div>
                         </div>
                     </div>
-                    <div class="popup-done__decoration">
+                    <div class="popup__decoration">
+                        <img src="./template/img/edging-bottom.png" alt="Декорация">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="popup-success" class="popup popup-success">
+            <div class="popup__body popup-success__body">
+                <div class="popup__content popup-success__content">
+                    <div class="popup__decoration">
+                        <img src="./template/img/edging.png" alt="Декорация">
+                    </div>
+                    <div class="popup-success__inner popup__inner">
+                        <h2>Ваша натальная карта расшифрована</h2>
+                        <p>Спасибо, ожидайте ответа от астролога на вашу почту</p>
+                        <div class="popup-close popup-success__submit popup__submit">
+                            <img src="./template/img/button-edging.png" alt="Декорация">
+                            <div>Закрыть</div>
+                        </div>
+                    </div>
+                    <div class="popup__decoration">
                         <img src="./template/img/edging-bottom.png" alt="Декорация">
                     </div>
                 </div>

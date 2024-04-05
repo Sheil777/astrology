@@ -109,30 +109,6 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  function formAddError(input) {
-    input.classList.add('_error');
-
-    // Если радио
-    if(input.type == 'radio'){
-      let label = input.nextElementSibling;
-      if(label.tagName.toLowerCase() == 'label')
-        label.classList.add('_error');
-    }
-  }
-
-  function formRemoveError(input) {
-    input.classList.remove('_error');
-
-    // Если радио
-    if(input.type == 'radio'){
-      let block = input.parentNode;
-      let els = block.querySelectorAll('input, label');
-      els.forEach(element => {
-        element.classList.remove('_error');
-      })
-    }
-  }
-
 
 
   // Бег полосочек
@@ -163,6 +139,53 @@ document.addEventListener("DOMContentLoaded", () => {
           popupOpen(popup);
         }
       }, 10);
-    });
+  });
 
+
+    document.querySelector('.popup-done__submit').addEventListener('click', () => {
+      const inputs = document.getElementById('popup-done').getElementsByTagName('input');
+
+      for(let i = 0; i < inputs.length; i++){
+        let el = inputs[i];
+
+        el.addEventListener('click', () => {
+          formRemoveError(el);
+        });
+
+        if(el.value === '') {
+          formAddError(el);
+        }else{
+          const popup = document.getElementById('popup-success'); // Popup который нужно открыть
+          popupOpen(popup);
+
+          break;
+        }
+      }
+
+    })
 });
+
+
+function formAddError(input) {
+  input.classList.add('_error');
+
+  // Если радио
+  if(input.type == 'radio'){
+    let label = input.nextElementSibling;
+    if(label.tagName.toLowerCase() == 'label')
+      label.classList.add('_error');
+  }
+}
+
+function formRemoveError(input) {
+  input.classList.remove('_error');
+
+  // Если радио
+  if(input.type == 'radio'){
+    let block = input.parentNode;
+    let els = block.querySelectorAll('input, label');
+    els.forEach(element => {
+      element.classList.remove('_error');
+    })
+  }
+}
