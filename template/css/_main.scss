@@ -516,8 +516,12 @@
             padding-bottom: 94px;
 
             @media (max-width: 992px) {
-                padding-top: 80px;
+                padding-top: 65px;
                 padding-bottom: 50px;
+            }
+
+            @media (max-width: 576px) {
+                font-size: 35px;
             }
         }
     }
@@ -568,6 +572,8 @@
 
         &.third {
             background-color: #0E0E27;
+            font-size: 16px;
+
             p {
                 font-family: "JetBrains Mono", monospace;
             }
@@ -580,6 +586,10 @@
         line-height: 115%;
         font-weight: 500; // Medium
         padding-bottom: 15px;
+
+        @media (max-width: 576px) {
+            font-size: 18px;
+        }
     }
 
     p {
@@ -590,6 +600,10 @@
 
         span {
             color: #fff;
+        }
+
+        @media (max-width: 576px) {
+            font-size: 16px;
         }
     }
 
