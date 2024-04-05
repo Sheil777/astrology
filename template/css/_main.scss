@@ -61,13 +61,15 @@
 
     &__circle {
         position: absolute;
-        right: 0;
+        right: -80px;
+        top: -51px;
         z-index: 0;
+        width: 75%;
     }
 
     &__stones {
         position: absolute;
-        top: 770px;
+        top: 780px;
 
         z-index: 20;
 
@@ -112,7 +114,7 @@
 }
 
 .form {
-    margin-top: 87px;
+    margin-top: 108px;
     margin-left: 172px;
     // z-index: 23;
     width: 524px;

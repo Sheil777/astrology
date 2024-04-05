@@ -147,12 +147,14 @@ body.lock {
 }
 .promo-bg__circle {
   position: absolute;
-  right: 0;
+  right: -80px;
+  top: -51px;
   z-index: 0;
+  width: 75%;
 }
 .promo-bg__stones {
   position: absolute;
-  top: 770px;
+  top: 780px;
   z-index: 20;
   pointer-events: none;
 }
@@ -185,7 +187,7 @@ body.lock {
   color: #787878;
 }
 .form {
-  margin-top: 87px;
+  margin-top: 108px;
   margin-left: 172px;
   width: 524px;
 }
