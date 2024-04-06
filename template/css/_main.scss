@@ -10,6 +10,10 @@
     &__container {
         display: flex;
         padding-top: 54px;
+
+        @media (max-width: 680px) {
+            padding-top: 25px;
+        }
     }
 
     &__logo {
@@ -31,6 +35,14 @@
         gap: 30px;
 
         margin-left: -180px;
+
+        @media (max-width: 1370px) {
+            margin-left: 0;
+        }
+
+        @media (max-width: 768px) {
+            justify-content: end;
+        }
     }
 
     &__item {
@@ -63,6 +75,10 @@
     width: 100%;
     height: 90%;
 
+    @media (max-width: 768px) {
+        opacity: 0.4;
+    }
+
     &__circle {
         position: absolute;
         right: -64px;
@@ -81,6 +97,14 @@
 
         @media (max-width: 1400px) {
             right: -310px;
+        }
+
+        @media (max-width: 768px) {
+            height: unset;
+            width: 145%;
+            right: 0;
+            left: -70px;
+            top: 0;
         }
     }
 
@@ -148,8 +172,8 @@
         }
 
         @media (max-width: 768px) {
-            padding-top: 150px;
-            text-align: center;
+            padding-top: 128px;
+            // text-align: center;
             max-width: 100%;
         }
     }
@@ -169,8 +193,9 @@
         }
 
         @media (max-width: 768px) {
-            text-align: center;
-            max-width: 100%;
+            // text-align: center;
+            max-width: 400px;
+            margin-top: 35px;
         }
     }
 
@@ -297,18 +322,24 @@
             position: relative;
 
             cursor: pointer;
-
-            &_nr {
-                width: 398px;
-                margin: 0 auto;
-                margin-top: 15px;
-            }
             
             span {
                 font-size: 18px;
                 font-weight: 400; /* Regular */
                 color: #fff;
                 font-family: "JetBrains Mono", monospace;
+            }
+
+            &_nr {
+                width: 398px;
+                margin: 0 auto;
+                margin-top: 15px;
+
+                @media (max-width: 1050px) {
+                    span {
+                        font-size: 16px;
+                    }
+                }
             }
 
             &:last-child {
@@ -542,6 +573,10 @@
 // feedback
 
 .feedback {
+
+    @media (max-width: 768px) {
+        padding-top: 60px;
+    }
 
     &__container {
         h2 {

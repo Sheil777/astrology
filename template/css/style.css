@@ -113,6 +113,11 @@ body.lock {
   display: flex;
   padding-top: 54px;
 }
+@media (max-width: 680px) {
+  .header__container {
+    padding-top: 25px;
+  }
+}
 .header__logo {
   color: #fff;
   font-size: 20px;
@@ -127,6 +132,16 @@ body.lock {
   justify-content: center;
   gap: 30px;
   margin-left: -180px;
+}
+@media (max-width: 1370px) {
+  .menu__list {
+    margin-left: 0;
+  }
+}
+@media (max-width: 768px) {
+  .menu__list {
+    justify-content: end;
+  }
 }
 .menu__link {
   color: #D4D4D4;
@@ -149,6 +164,11 @@ body.lock {
   width: 100%;
   height: 90%;
 }
+@media (max-width: 768px) {
+  .promo-bg {
+    opacity: 0.4;
+  }
+}
 .promo-bg__circle {
   position: absolute;
   right: -64px;
@@ -169,6 +189,15 @@ body.lock {
 @media (max-width: 1400px) {
   .promo-bg__circle {
     right: -310px;
+  }
+}
+@media (max-width: 768px) {
+  .promo-bg__circle {
+    height: unset;
+    width: 145%;
+    right: 0;
+    left: -70px;
+    top: 0;
   }
 }
 .promo-bg__stones {
@@ -240,8 +269,7 @@ body.lock {
 }
 @media (max-width: 768px) {
   .promo__header {
-    padding-top: 150px;
-    text-align: center;
+    padding-top: 128px;
     max-width: 100%;
   }
 }
@@ -261,8 +289,8 @@ body.lock {
 }
 @media (max-width: 768px) {
   .promo__text {
-    text-align: center;
-    max-width: 100%;
+    max-width: 400px;
+    margin-top: 35px;
   }
 }
 @media (max-width: 1050px) {
@@ -375,16 +403,21 @@ body.lock {
   position: relative;
   cursor: pointer;
 }
-.form__radio-label_nr {
-  width: 398px;
-  margin: 0 auto;
-  margin-top: 15px;
-}
 .form__radio-label span {
   font-size: 18px;
   font-weight: 400; /* Regular */
   color: #fff;
   font-family: "JetBrains Mono", monospace;
+}
+.form__radio-label_nr {
+  width: 398px;
+  margin: 0 auto;
+  margin-top: 15px;
+}
+@media (max-width: 1050px) {
+  .form__radio-label_nr span {
+    font-size: 16px;
+  }
 }
 .form__radio-label:last-child {
   margin-right: 0;
@@ -579,6 +612,11 @@ body.lock {
   }
 }
 
+@media (max-width: 768px) {
+  .feedback {
+    padding-top: 60px;
+  }
+}
 .feedback__container h2 {
   font-family: "Cormorant SC";
   font-size: 50px;
@@ -1182,4 +1220,58 @@ body.lock {
 }
 .popup-success__inner {
   padding: 30px 150px;
+}
+.burger {
+  display: none;
+  position: absolute;
+  width: 30px;
+  height: 20px;
+  top: 30px;
+  right: 22px;
+  z-index: 10;
+}
+.burger span, .burger::before, .burger::after {
+  display: block;
+  content: "";
+  width: 100%;
+  height: 2px;
+  background-color: white;
+  position: absolute;
+}
+.burger span {
+  position: absolute;
+  top: 9.3333333333px;
+  transition: all 0.3s;
+}
+.burger::before, .burger::after {
+  transition: all 0.5s;
+}
+.burger::before {
+  top: 0;
+}
+.burger::after {
+  bottom: 0;
+}
+
+.burger_close {
+  z-index: 10;
+}
+.burger_close span {
+  /* transform: rotate(45deg); */
+  width: 0;
+  background-color: white;
+}
+.burger_close::before {
+  top: 8px;
+  transform: rotate(45deg);
+}
+.burger_close::after {
+  top: 8px;
+  transform: rotate(-45deg);
+}
+
+@media (max-width: 576px) {
+  .burger {
+    display: block;
+  }
 }/*# sourceMappingURL=style.css.map */
