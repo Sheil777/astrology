@@ -163,8 +163,30 @@ document.addEventListener("DOMContentLoaded", () => {
       }
 
     })
+
+
+    // Бургер
+    document.querySelector('.burger').addEventListener('click', () => {
+      document.querySelector('.header__menu_phone').classList.toggle('open');
+      document.querySelector('.burger').classList.toggle('burger_close');
+      document.querySelector('body').classList.toggle('lock');
+    })
+
+    document.querySelectorAll('.menu-phone__link').forEach((element) => {
+      element.addEventListener('click', closePhoneMenu);
+    });
+
+    document.querySelector('.menu-phone__close').addEventListener('click', () => {
+      closePhoneMenu()
+      console.log('tur')
+    });
 });
 
+function closePhoneMenu(){
+  document.querySelector('.header__menu_phone').classList.remove('open');
+  document.querySelector('.burger').classList.remove('burger_close');
+  document.querySelector('body').classList.remove('lock');
+}
 
 function formAddError(input) {
   input.classList.add('_error');
