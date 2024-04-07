@@ -155,8 +155,24 @@ document.addEventListener("DOMContentLoaded", () => {
         if(el.value === '') {
           formAddError(el);
         }else{
-          const popup = document.getElementById('popup-success'); // Popup который нужно открыть
-          popupOpen(popup);
+          // Отправляем email
+          const email = document.querySelector('.popup-done__input').value;
+          
+          $.ajax({
+            type: "POST",
+            url: './template/php/formProcessing.php',
+            dataType: 'html',
+            data: {
+              email: email,
+            },
+            success: function(response)
+            {
+                var jsonData = JSON.parse(response);
+
+                const popup = document.getElementById('popup-success'); // Popup который нужно открыть
+                popupOpen(popup);
+            }
+          });
 
           break;
         }
@@ -180,6 +196,7 @@ document.addEventListener("DOMContentLoaded", () => {
       closePhoneMenu()
       console.log('tur')
     });
+
 });
 
 function closePhoneMenu(){
