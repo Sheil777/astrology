@@ -1196,10 +1196,21 @@
         margin: 0 auto;
         margin-top: 40px;
 
+        @media (max-width: 576px) {
+            width: 227px;
+            height: 70px;
+            margin-top: 25px;
+        }
+
         img {
             position: absolute;
             top: 0;
             left: 0;
+
+            @media (max-width: 576px) {
+                width: 100%;
+                height: 100%;
+            }
         }
 
         div {
@@ -1217,6 +1228,14 @@
 
             transition: all 0.3s;
             color: #fff;
+
+            @media (max-width: 576px) {
+                font-size: 12.6px;
+                top: 15px;
+                left: 33px;
+                width: 161px;
+                height: 40px;
+            }
         }
 
         &:hover {
@@ -1317,11 +1336,25 @@
         padding: 10px;
     }
 
-    // &__content {
-    // }
+    &__content {
+        @media (max-width: 576px) {
+            padding: 10px;
+        }
+    }
 
     &__inner {
-        padding: 30px 150px;
+
+    }
+
+    &__info {
+        padding: 30px;
+        margin: 0 auto;
+        max-width: 440px;
+
+        @media (max-width: 576px) {
+            max-width: 350px;
+            padding: 30px 17px;
+        }
 
         h2 {
             font-family: "Cormorant SC";
@@ -1330,12 +1363,23 @@
             text-align: center;
             max-width: 380px;
             margin: 0 auto;
+
+            @media (max-width: 576px) {
+                font-size: 28px;
+
+            }
         }
 
         h3 {
             padding-top: 40px;
             line-height: 150%;
             color: #787878;
+
+            @media (max-width: 576px) {
+                font-size: 16px;
+                padding-top: 25px;
+                line-height: 110%;
+            }
         }
 
         ul {
@@ -1346,6 +1390,10 @@
                 display: flex;
                 align-items: center;
                 margin-bottom: 10px;
+
+                @media (max-width: 576px) {
+                    font-size: 14px;
+                }
 
                 &:last-child {
                     margin-bottom: 0;
@@ -1363,24 +1411,54 @@
         margin-top: 40px;
         font-family: "Cormorant SC";
         font-size: 36px;
+
+        @media (max-width: 576px) {
+            font-size: 28px;
+            margin-top: 25px;
+        }
     }
 
     &__promotion-text {
         margin-top: 15px;
+
+        @media (max-width: 576px) {
+            font-size: 14px;
+        }
     }
 
     &__input {
         margin-top: 25px;
-        width: 400px;
+        width: 100%;
+        max-width: 400px;
         height: 60px;
         padding: 0 25px;
         background: #01080E;
         border-radius: 5px;
+        box-sizing: border-box;
 
         font-family: "JetBrains Mono";
         font-size: 18px;
         color: white;
 
+        @media (max-width: 576px) {
+            font-size: 16px;
+            height: 54px;
+            padding: 0 15px;
+        }
+
+        &:focus {
+            outline: none;
+            // outline: 2px solid #A665C7;
+            outline: 2px solid #fff;
+
+            @media (max-width: 576px) {
+                outline: 1px solid #fff;
+            }
+
+            &[readonly] {
+                outline: none;
+            }
+        }
 
         &::placeholder {
             color: #787878;
