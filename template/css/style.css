@@ -1259,6 +1259,11 @@ body.lock {
   height: 100px;
   margin: 0 auto;
   margin-top: 40px;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 @media (max-width: 576px) {
   .popup__submit {
