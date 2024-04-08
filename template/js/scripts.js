@@ -159,16 +159,27 @@ document.addEventListener("DOMContentLoaded", () => {
 
         el.addEventListener('click', () => {
           formRemoveError(el);
+          document.querySelector('.popup-done__errors').classList.remove('open');
         });
 
         if(el.value === '') {
           formAddError(el);
+          document.querySelector('.popup-done__errors').textContent = 'Заполните обязательное поле';
+          document.querySelector('.popup-done__errors').classList.add('open');
         }else{
-          // Отправляем email
           const email = document.querySelector('.popup-done__input').value;
-          sendForm(email);
 
-          break;
+          // Проверка на валидность
+          const re = /^[\w-\.]+@[\w-]+\.[a-z]{2,4}$/i;
+          if(re.test(email)){
+            // Отправляем email
+            sendForm(email);
+            break;
+          }else{
+            formAddError(el);
+            document.querySelector('.popup-done__errors').textContent = 'Некорректный email';
+            document.querySelector('.popup-done__errors').classList.add('open');
+          }
         }
       }
 

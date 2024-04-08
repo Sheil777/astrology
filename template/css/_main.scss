@@ -1589,6 +1589,17 @@
             box-shadow: 0 0 10px red;
         }
     }
+
+    &__errors {
+        display: none;
+        font-size: 14px;
+        margin-top: 5px;
+        color: red;
+
+        &.open {
+            display: block;
+        }
+    }
 }
 
 .popup-success {

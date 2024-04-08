@@ -1500,6 +1500,15 @@ body.lock {
 .popup-done__input._error {
   box-shadow: 0 0 10px red;
 }
+.popup-done__errors {
+  display: none;
+  font-size: 14px;
+  margin-top: 5px;
+  color: red;
+}
+.popup-done__errors.open {
+  display: block;
+}
 
 .popup-success__content {
   padding-right: 0;
