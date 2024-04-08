@@ -137,6 +137,15 @@ document.addEventListener("DOMContentLoaded", () => {
 
           const popup = document.getElementById('popup-done'); // Popup который нужно открыть
           popupOpen(popup);
+
+          // Обнуляем счётчики
+          popupComp.forEach(element => {
+            element.style.width = 0;
+            element.querySelector('span').textContent = '0%';
+          });
+
+          // Возвращаем на первый слайд
+          swiperForm.slideTo(0);
         }
       }, 10);
   });
@@ -157,22 +166,7 @@ document.addEventListener("DOMContentLoaded", () => {
         }else{
           // Отправляем email
           const email = document.querySelector('.popup-done__input').value;
-          
-          $.ajax({
-            type: "POST",
-            url: './template/php/formProcessing.php',
-            dataType: 'html',
-            data: {
-              email: email,
-            },
-            success: function(response)
-            {
-                var jsonData = JSON.parse(response);
-
-                const popup = document.getElementById('popup-success'); // Popup который нужно открыть
-                popupOpen(popup);
-            }
-          });
+          sendForm(email);
 
           break;
         }
@@ -198,6 +192,28 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
 });
+
+function sendForm(email){
+  $.ajax({
+    type: "POST",
+    url: './template/php/formProcessing.php',
+    dataType: 'html',
+    data: {
+      email: email,
+    },
+    success: function(response)
+    {
+        var jsonData = JSON.parse(response);
+
+        const popup = document.getElementById('popup-success'); // Popup который нужно открыть
+        popupOpen(popup);
+    },
+    error: function() {
+      const popup = document.getElementById('popup-error'); // Popup который нужно открыть
+      popupOpen(popup);
+    }
+  });
+}
 
 function closePhoneMenu(){
   document.querySelector('.header__menu_phone').classList.remove('open');

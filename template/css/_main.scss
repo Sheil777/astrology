@@ -571,7 +571,22 @@
 
     &__input {
         &-block {
+            // position: relative;
             margin-top: 60px;
+
+            // &::after {
+            //     display: none;
+            //     position: absolute;
+            //     content: 'Заполните обязательные поля';
+            //     bottom: -25px;
+            //     left: 0;
+            //     font-size: 14px;
+            //     color: red;
+            // }
+
+            // &._error::after{
+            //     display: block;
+            // }
 
             @media (max-width: 1050px) {
                 margin-top: 30px;
