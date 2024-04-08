@@ -1,7 +1,8 @@
 document.addEventListener("DOMContentLoaded", () => {
   const swiperForm = new Swiper('.form', {
     slidesPerView: 1,
-    effect: "cube",
+    // effect: "cube",
+    effect: "flip",
     // Запрещает прокрутку мышкой
     allowTouchMove: false,
   });

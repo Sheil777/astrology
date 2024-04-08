@@ -97,7 +97,7 @@ git config --global credential.helper store
 Полезные ссылки:
 https://tinyjpg.com/ - сжатие картинок
 https://blog.lisogorsky.ru/ignor-scroll-iframe-maps - пролистывание карты
-
+https://live.browserstack.com - сафари
 
 
 
