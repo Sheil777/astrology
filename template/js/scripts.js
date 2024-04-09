@@ -8,10 +8,14 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   const swiperFeedback = new Swiper('.feedback__slider', {
-    slidesPerView: 1,
-    spaceBetween: 25,
+    slidesPerView: 1.07,
+    spaceBetween: 20,
 
     breakpoints: {
+      500: {
+        slidesPerView: 1.2,
+        spaceBetween: 25,
+      },
       724: {
         slidesPerView: 1.5,
         spaceBetween: 20,

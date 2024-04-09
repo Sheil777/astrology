@@ -135,6 +135,7 @@ body.lock {
   list-style: none;
   display: flex;
   justify-content: center;
+  align-items: center;
   gap: 30px;
   margin-left: -180px;
 }
@@ -1116,7 +1117,7 @@ body.lock {
   display: flex;
   gap: 35px;
 }
-@media (max-width: 900px) {
+@media (max-width: 1010px) {
   .footer-t {
     flex-wrap: wrap;
   }
@@ -1135,7 +1136,7 @@ body.lock {
     font-size: 16px;
   }
 }
-@media (max-width: 900px) {
+@media (max-width: 1010px) {
   .footer-t__start {
     flex: 0 1 100%;
   }
@@ -1203,6 +1204,7 @@ body.lock {
   font-size: 14px;
   color: #b5b5b5;
   margin-right: auto;
+  line-height: 120%;
 }
 .footer-b ul {
   display: flex;
@@ -1218,7 +1220,7 @@ body.lock {
 }
 @media (max-width: 1200px) {
   .footer-b__copyright {
-    flex: 0 0 230px;
+    flex: 0 0 190px;
   }
   .footer-b ul {
     flex-wrap: wrap;

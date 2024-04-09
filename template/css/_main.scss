@@ -36,6 +36,7 @@
 
         display: flex;
         justify-content: center;
+        align-items: center;
         gap: 30px;
 
         margin-left: -180px;
@@ -1135,7 +1136,7 @@
     display: flex;
     gap: 35px;
 
-    @media (max-width: 900px) {
+    @media (max-width: 1010px) {
         flex-wrap: wrap;
     }
 
@@ -1153,7 +1154,7 @@
             }
         }
 
-        @media (max-width: 900px) {
+        @media (max-width: 1010px) {
             flex: 0 1 100%;
         }
     }
@@ -1236,6 +1237,7 @@
         font-size: 14px;
         color: #b5b5b5;
         margin-right: auto;
+        line-height: 120%;
     }
 
     ul {
@@ -1255,7 +1257,7 @@
 
     @media (max-width: 1200px) {
         &__copyright {
-            flex: 0 0 230px;
+            flex: 0 0 190px;
         }
 
         ul {
