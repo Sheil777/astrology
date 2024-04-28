@@ -1464,6 +1464,10 @@
 
     &__body {
         padding: 0 10px;
+
+        @media (max-width: 480px) {
+            padding-top: 10px;
+        }
     }
 
     &__content {
@@ -1487,6 +1491,13 @@
         @media (max-width: 576px) {
             max-width: 350px;
             padding: 30px 17px;
+        }
+
+        @media (max-width: 480px) {
+            position: relative;
+            // min-height: calc(100vh - 60px);
+            // min-height: calc(100vh);
+            min-height: calc(95vh);
         }
 
         h2 {
@@ -1598,6 +1609,22 @@
         color: #787878;
         font-size: 15px;
         margin-top: 10px;
+
+        &_desktop {
+            @media (max-width: 480px) {
+                display: none;
+            }
+        }
+
+        &_phone {
+            display: none;
+            position: absolute;
+            bottom: 20px;
+
+            @media (max-width: 480px) {
+                display: block;
+            }
+        }
 
         @media (max-width: 1500px) {
             font-size: 14px;

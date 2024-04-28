@@ -1375,6 +1375,11 @@ body.lock {
 .popup-done__body {
   padding: 0 10px;
 }
+@media (max-width: 480px) {
+  .popup-done__body {
+    padding-top: 10px;
+  }
+}
 @media (max-width: 1800px) {
   .popup-done__content {
     max-width: 590px;
@@ -1394,6 +1399,12 @@ body.lock {
   .popup-done__info {
     max-width: 350px;
     padding: 30px 17px;
+  }
+}
+@media (max-width: 480px) {
+  .popup-done__info {
+    position: relative;
+    min-height: 95vh;
   }
 }
 .popup-done__info h2 {
@@ -1507,6 +1518,21 @@ body.lock {
   color: #787878;
   font-size: 15px;
   margin-top: 10px;
+}
+@media (max-width: 480px) {
+  .popup-done__comment_desktop {
+    display: none;
+  }
+}
+.popup-done__comment_phone {
+  display: none;
+  position: absolute;
+  bottom: 20px;
+}
+@media (max-width: 480px) {
+  .popup-done__comment_phone {
+    display: block;
+  }
 }
 @media (max-width: 1500px) {
   .popup-done__comment {
