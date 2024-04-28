@@ -93,9 +93,9 @@
                                         </div>
                                         <h2 class="form__header">Ваша дата рождения?</h2>
                                         <div class="form__input-block mt35">
-                                            <input class="form__input require" type="number" tabindex="-1" placeholder="День" min="1" max="31" maxlength="2">
-                                            <input class="form__input require" type="number" tabindex="-1" placeholder="Месяц" min="1" max="12">
-                                            <input class="form__input require" type="number" tabindex="-1" placeholder="Год" min="1" max="9999">
+                                            <input class="form__input require" type="number" tabindex="-1" placeholder="День" min="1" max="31" oninput="this.value = this.value.slice(0, 2)">
+                                            <input class="form__input require" type="number" tabindex="-1" placeholder="Месяц" min="1" max="12" oninput="this.value = this.value.slice(0, 2)">
+                                            <input class="form__input require" type="number" tabindex="-1" placeholder="Год" min="1" max="9999" oninput="this.value = this.value.slice(0, 4)">
                                         </div>
                                         <div class="form__next">
                                             <img src="./template/img/button-edging.png" alt="Декорация">
@@ -118,8 +118,8 @@
                                         </div>
                                         <h2 class="form__header">Ваше время рождения?</h2>
                                         <div class="form__input-block mt20">
-                                            <input class="form__input require w100" type="number" tabindex="-1" placeholder="Часы" max="24">
-                                            <input class="form__input require w100" type="number" tabindex="-1" placeholder="Минуты" max="60">
+                                            <input class="form__input require w100" type="number" tabindex="-1" placeholder="Часы" max="24" oninput="this.value = this.value.slice(0, 2)">
+                                            <input class="form__input require w100" type="number" tabindex="-1" placeholder="Минуты" max="60" oninput="this.value = this.value.slice(0, 2)">
                                         </div>
                                         
 
