@@ -1405,6 +1405,7 @@ body.lock {
   .popup-done__info {
     position: relative;
     min-height: 95vh;
+    padding-bottom: 80px;
   }
 }
 .popup-done__info h2 {
@@ -1528,6 +1529,7 @@ body.lock {
   display: none;
   position: absolute;
   bottom: 20px;
+  padding-right: 17px;
 }
 @media (max-width: 480px) {
   .popup-done__comment_phone {

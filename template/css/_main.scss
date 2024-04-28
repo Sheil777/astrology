@@ -1498,6 +1498,8 @@
             // min-height: calc(100vh - 60px);
             // min-height: calc(100vh);
             min-height: calc(95vh);
+            padding-bottom: 80px;
+            // padding-bottom: 180px;
         }
 
         h2 {
@@ -1620,6 +1622,7 @@
             display: none;
             position: absolute;
             bottom: 20px;
+            padding-right: 17px;
 
             @media (max-width: 480px) {
                 display: block;
