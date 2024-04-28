@@ -1503,6 +1503,21 @@ body.lock {
     font-size: 14px;
   }
 }
+.popup-done__comment {
+  color: #787878;
+  font-size: 15px;
+  margin-top: 10px;
+}
+@media (max-width: 1500px) {
+  .popup-done__comment {
+    font-size: 14px;
+  }
+}
+@media (max-width: 576px) {
+  .popup-done__comment {
+    font-size: 12px;
+  }
+}
 .popup-done__input {
   margin-top: 25px;
   width: 100%;
