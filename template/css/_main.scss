@@ -1609,33 +1609,24 @@
 
     &__comment {
         color: #787878;
-        font-size: 15px;
-        margin-top: 10px;
+        font-size: 12px;
+        margin-top: 20px;
 
-        &_desktop {
-            @media (max-width: 480px) {
-                display: none;
-            }
-        }
-
-        &_phone {
-            display: none;
+        @media (max-width: 480px) {
+            display: block;
             position: absolute;
             bottom: 20px;
             padding-right: 17px;
-
-            @media (max-width: 480px) {
-                display: block;
-            }
+            margin-top: 0;
         }
+    
+        // @media (max-width: 1500px) {
+        //     font-size: 14px;
+        // }
 
-        @media (max-width: 1500px) {
-            font-size: 14px;
-        }
-
-        @media (max-width: 576px) {
-            font-size: 12px;
-        }
+        // @media (max-width: 576px) {
+        //     font-size: 12px;
+        // }
     }
 
     &__input {

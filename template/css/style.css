@@ -1517,33 +1517,16 @@ body.lock {
 }
 .popup-done__comment {
   color: #787878;
-  font-size: 15px;
-  margin-top: 10px;
+  font-size: 12px;
+  margin-top: 20px;
 }
 @media (max-width: 480px) {
-  .popup-done__comment_desktop {
-    display: none;
-  }
-}
-.popup-done__comment_phone {
-  display: none;
-  position: absolute;
-  bottom: 20px;
-  padding-right: 17px;
-}
-@media (max-width: 480px) {
-  .popup-done__comment_phone {
+  .popup-done__comment {
     display: block;
-  }
-}
-@media (max-width: 1500px) {
-  .popup-done__comment {
-    font-size: 14px;
-  }
-}
-@media (max-width: 576px) {
-  .popup-done__comment {
-    font-size: 12px;
+    position: absolute;
+    bottom: 20px;
+    padding-right: 17px;
+    margin-top: 0;
   }
 }
 .popup-done__input {
