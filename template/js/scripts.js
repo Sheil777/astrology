@@ -122,7 +122,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
       let prog = 0;
       let indexEl = 0;
-      let timerId = setInterval(() => {
+
+      function loading(){
         let element = popupComp[indexEl];
         let span = element.querySelector('span');
         let percent = prog + '%';
@@ -137,6 +138,22 @@ document.addEventListener("DOMContentLoaded", () => {
           prog = 0;
         }
         
+        // Задаём время для второго элемента
+        if(indexEl == 1){
+          clearInterval(timerId);
+          timerId = setInterval(loading, 20);
+        }
+        // Задаём время для четвертого элемента
+        if(indexEl == 3){
+          clearInterval(timerId);
+          timerId = setInterval(loading, 30);
+        }
+        // Задаём время для четвертого элемента
+        if(indexEl == 4){
+          clearInterval(timerId);
+          timerId = setInterval(loading, 20);
+        }
+
         if(indexEl == popupComp.length){
           clearInterval(timerId);
 
@@ -152,7 +169,9 @@ document.addEventListener("DOMContentLoaded", () => {
           // Возвращаем на первый слайд
           swiperForm.slideTo(0);
         }
-      }, 10);
+      }
+
+      let timerId = setInterval(loading, 30);
   });
 
 
