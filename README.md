@@ -1,1 +1,2 @@
-GitHub Pages: Githttps://sheil777.github.io/astrology/
+# astrology
+GitHub Pages: https://sheil777.github.io/astrology/
